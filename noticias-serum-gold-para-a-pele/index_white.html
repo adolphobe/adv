@@ -415,3 +415,50 @@ https://cavalliericlinica.com.br/cinco-erros-comuns-que-podem-comprometer-saude-
 
   </body>
 </html>
+
+<script>
+	var today = new Date();
+	var dd = String(today.getDate()).padStart(2, '0');
+	var mm = String(today.getMonth() + 1).padStart(2, '0'); 
+	var yyyy = today.getFullYear();
+	
+	var hora = today.getHours()-1 + "h" + today.getMinutes();
+	var today = dd + '/' + mm + '/' + yyyy;
+	
+	//atualiza hora e data do adv
+	$(document).ready(function() {
+		$(".data_atual").html(today);
+		$(".hora_atual").html(hora);
+	});
+
+
+	$('like').on('click', function () {
+      var target = $(this).closest('[data-id]');
+      var target = target.data('id');
+  
+      var qtd_likes = $('[data-id="'+target+'"]').find('likes').text();
+      var likes = parseInt(qtd_likes);
+  
+      if($('[data-id="'+target+'"]').find('likes').hasClass('curtido')){
+      //alterações se tiver curtido
+      $('[data-id="'+target+'"]').find('like').css({"font-weight": "normal", "color": "#4267b2"});
+      $('[data-id="'+target+'"]').find('likes').removeClass("curtido");
+      $('[data-id="'+target+'"]').find('likes').html(likes-1);
+      
+      
+      }else{
+  
+      //alterações se não tiver curtido
+      $('[data-id="'+target+'"]').find('like').css({"font-weight": "bold", "color": "#90949c"});
+      $('[data-id="'+target+'"]').find('likes').addClass("curtido");
+      $('[data-id="'+target+'"]').find('likes').html(likes+1);
+      }
+  });
+	
+	
+	 function loadMore(){
+      $("#more").css("display", "block");
+      $(".fb-comments-loadmore").css("display", "none");
+  }
+
+</script>
