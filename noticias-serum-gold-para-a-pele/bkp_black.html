@@ -12,7 +12,13 @@
   var link_destino = 'https://serum-gold.shop/pv01';
 
   //TABOOLA PAGE VIEW
-  window._tfa.push({notify: 'event', name: 'page_view', id: taboola_pixel});
+  //Verifica se sessão está visivel na tela
+  $(window).on('scroll',function() {
+      if (checkVisible($('#marca_view_content'))) {
+        window._tfa.push({notify: 'event', name: 'page_view', id: taboola_pixel});
+          $(window).off('scroll');
+      } else {}
+  });
 
   //TABOOLA VIEW CONTENT
   _tfa.push({notify: 'event', name: 'view_content', id: taboola_pixel});
@@ -410,7 +416,7 @@
 	<a href="https://serum-gold.shop/pv01" class="GO-PV"><img src="img/a1.webp" class="primeira_foto"></a>
 	<div class="foto_descricao" style="padding-bottom:0px;">Foto: Eliandra Alves (resultados com 31 dias de uso)</div>
 	
-	<h1 class="h1_tipo2">Qual foi a Técnica Usada Por Ela?</h1>
+	<h1 class="h1_tipo2 marca_view_content">Qual foi a Técnica Usada Por Ela?</h1>
 	
 	Eliandra Alves já frustrada com diversas tentativas de resolver o seu problema, procurou uma dermatologista famosa no instagram, ela a recomendou um novo produto que vinha causando um estouro de venda pelo Brasil, chocando todos as mulheres com sua eficácia.<br><br>
 
