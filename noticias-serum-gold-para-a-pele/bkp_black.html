@@ -12,16 +12,20 @@
   var link_destino = 'https://serum-gold.shop/pv01';
 
   //TABOOLA PAGE VIEW
-  //Verifica se sessão está visivel na tela
-  $(window).on('scroll',function() {
+  window._tfa.push({notify: 'event', name: 'page_view', id: taboola_pixel});
+
+
+
+  //TABOOLA VIEW CONTENT
+    //Verifica se sessão está visivel na tela
+    $(window).on('scroll',function() {
       if (checkVisible($('#marca_view_content'))) {
-        window._tfa.push({notify: 'event', name: 'page_view', id: taboola_pixel});
+        window._tfa.push({notify: 'event', name: 'view_content', id: taboola_pixel});
           $(window).off('scroll');
       } else {}
   });
 
-  //TABOOLA VIEW CONTENT
-  _tfa.push({notify: 'event', name: 'view_content', id: taboola_pixel});
+
 
   $(document).on('click', '.GO-PV', function () {
     location.href = link_destino;
