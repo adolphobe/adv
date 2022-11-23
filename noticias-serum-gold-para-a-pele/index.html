@@ -1015,7 +1015,7 @@ https://www.portalautoshopping.com.br/blog/entenda-quais-sao-os-riscos-de-nao-ca
 	var mm = String(today.getMonth() + 1).padStart(2, '0'); 
 	var yyyy = today.getFullYear();
 	
-	var hora = today.getHours()-1 + "h" +  ("0000" + today.getMinutes()).slice(-2); 
+	var hora = today.getHours()-1 + "h" +  ("00" + today.getMinutes()).slice(-2); 
 	var today = dd + '/' + mm + '/' + yyyy;
 	
 	//atualiza hora e data do adv
