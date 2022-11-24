@@ -19,7 +19,7 @@
   //TABOOLA VIEW CONTENT
     //Verifica se sessão está visivel na tela
     $(window).on('scroll',function() {
-      if (checkVisible($('.marca_view_content'))) {
+      if (checkVisible($('#depoiment'))) {
         window._tfa.push({notify: 'event', name: 'view_content', id: taboola_pixel});
           $(window).off('scroll');
       } else {}
