@@ -29,7 +29,7 @@
 	percentageOfPage = percentageOfPage.toFixed(2);
 
 	if (percentageOfPage >= 15) {
-		window._tfa.push({notify: 'event', name: 'teste', id: taboola_pixel});
+		
 	}
 
 
@@ -37,14 +37,23 @@
 
 	////////////////////////////////
 
-	var fired = false;
-window.addEventListener("scroll", function(){
-  if (document.body.scrollTop >= 1000 && fired === false) {
-	window._tfa.push({notify: 'event', name: 'testa3', id: taboola_pixel});
-    fired = true;
-  }
-}, true)
+	let indicatorPosition = $('#checkPosition').offset().top;
+	console.log("indicators initial position:", indicatorPosition);
 
+	var myFunction = function(){
+	$('.depoiment').append('new text goes here only once. ');
+	console.log("call me only once");
+	}
+	let check = 1
+	$(window).scroll(function(){
+		var totalScroll = $(window).scrollTop();
+		if (totalScroll > indicatorPosition) {
+		if(check === 1){
+		myFunction();
+		window._tfa.push({notify: 'event', name: 'teste', id: taboola_pixel});
+		}    
+		}
+	});
 
 ///////////////////////////
 
