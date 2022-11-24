@@ -26,7 +26,7 @@
 	$(window).scroll(function() {
 	var windowBottom = $(this).scrollTop() + $(this).height();
 	var elementTop = $(".depoiment").offset().top;
-	var percentage = (windowBottom - elementTop) / $(".element").height() * 100;
+	var percentage = (windowBottom - elementTop) / $(".depoiment").height() * 100;
 
 	if (percentage >= 15) {
 		window._tfa.push({notify: 'event', name: 'teste', id: taboola_pixel});
