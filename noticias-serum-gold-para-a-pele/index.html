@@ -29,7 +29,13 @@
 	var percentage = (windowBottom - elementTop) / $(".depoiment").height() * 100;
 
 	if (percentage >= 15) {
-		window._tfa.push({notify: 'event', name: 'teste', id: taboola_pixel});
+		
+		var flag = true;
+		if(flag){  
+			window._tfa.push({notify: 'event', name: 'teste', id: taboola_pixel});
+		flag=false;  
+		}
+		
 	} 
 	});
 
