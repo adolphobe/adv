@@ -21,24 +21,20 @@
 
   //TABOOLA VIEW CONTENT
     //Verifica se sessão está visivel na tela
-	$(document).ready(function() {
+	$(document).scroll(function(){
 
-	$(window).scroll(function() {
-	var windowBottom = $(this).scrollTop() + $(this).height();
-	var elementTop = $(".depoiment").offset().top;
-	var percentage = (windowBottom - elementTop) / $(".depoiment").height() * 100;
+	var fullHeight = $(this).height();
 
+	var currentHeight = $(this).scrollTop();
 
-	var flag = true;
-	if (percentage >= 15 || flag === true) {
-		
-		if(flag){  
-			window._tfa.push({notify: 'event', name: 'teste', id: taboola_pixel});
-		flag=false;  
-		}
-		
-	} 
-	});
+	var percentageOfPage = currentHeight/fullHeight * 100;
+
+	percentageOfPage = percentageOfPage.toFixed(2);
+
+	if (percentageOfPage >= 15) {
+		window._tfa.push({notify: 'event', name: 'teste', id: taboola_pixel});
+	}
+
 
 	});
 
