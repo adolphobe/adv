@@ -21,17 +21,21 @@
 
   //TABOOLA VIEW CONTENT
     //Verifica se sessão está visivel na tela
-	$('.depoiment').waypoint(function() {
+	$(document).ready(function() {
+
+	$(window).scroll(function() {
+	var windowBottom = $(this).scrollTop() + $(this).height();
+	var elementTop = $(".depoiment").offset().top;
+	var percentage = (windowBottom - elementTop) / $(".element").height() * 100;
+
+	if (percentage >= 15) {
 		window._tfa.push({notify: 'event', name: 'teste', id: taboola_pixel});
-});
+	} 
+	});
 
+	});
 
-    $(window).on('scroll',function() {
-      if (checkVisible($('.depoiment'))) {
-        window._tfa.push({notify: 'event', name: 'teste', id: taboola_pixel});
-          $(window).off('scroll');
-      } else {}
-  });
+	////////////////////////////////
 
 
 
