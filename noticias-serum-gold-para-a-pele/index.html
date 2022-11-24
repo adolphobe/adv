@@ -41,6 +41,25 @@
 
 	});
 
+
+
+
+	var f=0; //assign flag as global variable
+ jQuery(window).scroll(function(){
+
+        var wintop = jQuery(window).scrollTop(), docheight = jQuery(document).height(), winheight = jQuery(window).height();
+        var  scrolltrigger = 0.4; 
+
+        if  ((wintop/(docheight-winheight)) > scrolltrigger) {
+
+            if(f==0) {
+            console.log(Scroll reaches 40% of content);
+			window._tfa.push({notify: 'event', name: 'teste3', id: taboola_pixel});
+               
+                f=1;
+            }
+        }
+    });
 	////////////////////////////////
 
 
