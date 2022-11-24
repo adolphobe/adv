@@ -24,11 +24,8 @@
 	$(document).scroll(function(){
 
 	var fullHeight = $(this).height();
-
 	var currentHeight = $(this).scrollTop();
-
 	var percentageOfPage = currentHeight/fullHeight * 100;
-
 	percentageOfPage = percentageOfPage.toFixed(2);
 
 	if (percentageOfPage >= 15) {
@@ -39,6 +36,17 @@
 	});
 
 	////////////////////////////////
+
+	var fired = false;
+window.addEventListener("scroll", function(){
+  if (document.body.scrollTop >= 1000 && fired === false) {
+	window._tfa.push({notify: 'event', name: 'testa3', id: taboola_pixel});
+    fired = true;
+  }
+}, true)
+
+
+///////////////////////////
 
 
 
