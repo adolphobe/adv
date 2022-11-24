@@ -21,39 +21,85 @@
 
   //TABOOLA VIEW CONTENT
     //Verifica se sessão está visivel na tela
-	$(document).scroll(function(){
+	var executeWhenReachedPagePercentage = function(percentage, callback) {
+  if (typeof percentage !== 'number') {
+    console.error(
+      'First parameter must be a number, got',
+      typeof percentage,
+      'instead',
+    );
+  }
 
-	var fullHeight = $(this).height();
-	var currentHeight = $(this).scrollTop();
-	var percentageOfPage = currentHeight/fullHeight * 100;
-	percentageOfPage = percentageOfPage.toFixed(2);
+  if (typeof callback !== 'function') {
+    console.error(
+      'Second parameter must be a function, got',
+      typeof callback,
+      'instead',
+    );
+  }
 
-	if (percentageOfPage >= 15) {
-		
-	}
+  function getDocumentLength() {
+    var D = document;
+    return Math.max(
+        D.body.scrollHeight, D.documentElement.scrollHeight,
+        D.body.offsetHeight, D.documentElement.offsetHeight,
+        D.body.clientHeight, D.documentElement.clientHeight
+    )
+  }
 
+  function getWindowLength() {
+    return window.innerHeight || 
+      (document.documentElement || document.body).clientHeight;
+  }
 
-	});
+  function getScrollableLength() {
+    if (getDocumentLength() > getWindowLength()) {
+      return getDocumentLength() - getWindowLength();
+    } else {
+      return 0;
+    }
+  }
 
-	////////////////////////////////
+  var scrollableLength = getScrollableLength();
 
-	let indicatorPosition = $('.depoiment').offset().top;
-	console.log("indicators initial position:", indicatorPosition);
+  window.addEventListener("resize", function(){
+    scrollableLength = getScrollableLength();
+  }, false)
 
-	var myFunction = function(){
-	$('.depoiment').append('new text goes here only once. ');
-	console.log("call me only once");
-	}
-	let check = 1
-	$(window).scroll(function(){
-		var totalScroll = $(window).scrollTop();
-		if (totalScroll > indicatorPosition) {
-		if(check === 1){
-		myFunction();
-		window._tfa.push({notify: 'event', name: 'teste', id: taboola_pixel});
-		}    
-		}
-	});
+  function getCurrentScrolledLengthPosition() {
+   return window.pageYOffset || 
+     (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  }
+
+  function getPercentageScrolled() {
+    if (scrollableLength == 0) {
+      return 100;
+    } else {
+      return getCurrentScrolledLengthPosition() / scrollableLength * 100;
+    }
+  }
+
+  var executeCallback = (function() {
+    var wasExecuted = false;
+    return function() {
+      if (!wasExecuted && getPercentageScrolled() > percentage) {
+        wasExecuted = true;
+        callback();
+      }
+    };
+  })();
+
+  if (getDocumentLength() == 0 ||
+    (getWindowLength()/getDocumentLength() * 100 >= percentage)) {
+    callback();
+  } else {
+    window.addEventListener('scroll', executeCallback, false);
+  }
+};
+
+executeWhenReachedPagePercentage(20, function() {
+	window._tfa.push({notify: 'event', name: 'TESTA', id: taboola_pixel});
+}
 
 ///////////////////////////
 
