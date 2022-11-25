@@ -30,6 +30,27 @@
     })(window, document, "clarity", "script", "en2s850k9j");
 </script>
 
+<script>
+
+$(window).load(function() {
+  var $slider = $("#backgroundChanger"),
+    $slides = $slider.find("img"),
+    $firstSlide = $slides.first();
+
+  function cycleImages() {
+    var $active = $('#backgroundChanger .active'),
+      $next = ($active.next().length > 0) ? $active.next() : $firstSlide;
+    $active.fadeOut(1000, function() {
+      $active.removeClass('active');
+      $next.fadeIn(1000).addClass('active');
+    });
+  }
+
+  setInterval(cycleImages, 3000);
+})
+
+</script>
+
 
   </head>
  
@@ -321,7 +342,11 @@
 	
 	
 	
-	
+	#backgroundChanger img {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+}
 	
 </style>
   <body>
@@ -365,7 +390,13 @@
 <div class="resize_content" style="font-size:19px;">
 
 	<!-- PRIMEIRA FOTO -->
-	<img src="img/HEAD.jpg" class="primeira_foto">
+  <div id="backgroundChanger">
+    <img src="img/HEAD.jpg" class="active primeira_foto">
+    <img src="img/HEAD2.jpg" class="primeira_foto">
+    <img src="img/HEAD3.jpg" class="primeira_foto">
+  </div>
+  
+
 	
 	<!-- DESCRIÇÃO PRIMEIRA FOTO -->
 	<div class="foto_descricao" style="margin-top:0px;">
@@ -432,7 +463,7 @@
 	<div class="quote" style="font-weight: normal;  font-size: 19px;">
 	“Demoramos pra chegar em um produto completo, que pudesse ser usado em casa, e que garantisse realmente um efeito de <strong>"máquina do tempo"</strong>, mas depois de muitos esforços, com muito orgulho digo que conseguimos!<br><br>
 
-  Brinco que com o <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a> criamos a fórmula perfeita de Vitaminas e Nutrientes que fazem com que isso tudo acontença!<br><br>
+  Brinco que com o <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a> criamos a <strong>"fórmula perfeita"</strong> de Biotina, Niacina, Cobre, Zinco, Minerais além das Vitaminas A, E, C, B5 e B6 e outros compostos que fazem com que isso tudo acontença!<br><br>
   
   Temos inúmeros casos onde a mulher ou o homem parecem ter voltado <strong>5 ou até 10 anos atrás</strong>, o resultado é incrível!
 	</div>
