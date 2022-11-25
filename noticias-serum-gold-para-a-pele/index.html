@@ -30,31 +30,36 @@
     })(window, document, "clarity", "script", "en2s850k9j");
 </script>
 
-<script>
-
-$(window).load(function() {
-  var $slider = $("#backgroundChanger"),
-    $slides = $slider.find("img"),
-    $firstSlide = $slides.first();
-
-  function cycleImages() {
-    var $active = $('#backgroundChanger .active'),
-      $next = ($active.next().length > 0) ? $active.next() : $firstSlide;
-    $active.fadeOut(1000, function() {
-      $active.removeClass('active');
-      $next.fadeIn(1000).addClass('active');
-    });
-  }
-
-  setInterval(cycleImages, 3000);
-})
-
-</script>
-
-
   </head>
  
  <style>
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+
 @font-face {
   font-family: "Open Sans";
   font-weight: 700;
@@ -342,11 +347,7 @@ $(window).load(function() {
 	
 	
 	
-	#backgroundChanger img {
-  position: absolute;
-  width: 150px;
-  height: 100px;
-}
+	
 	
 </style>
   <body>
@@ -354,14 +355,14 @@ $(window).load(function() {
 <div class="topo">
 <div class="resize">
 	<div class="container">
-	  <div style="width: 74px; height:var(--topo); padding-left:12px;"><img src="img/1menu.png" style="margin-top:19px;"></div>
+	  <div style="width: 74px; height:var(--topo); padding-left:12px;"><img src="img/1menu.png"></div>
 	  <div style="width: 160px; height:var(--topo); font-size: 25px; font-weight:600; letter-spacing:-0.04em;">
 	  
 	  <!-- NOME PORTAL DE NOTICIA -->
 	 Saúde
 	  
 	  </div>
-	  <div style="width: 74px; height:var(--topo);"><img src="img/procura.png" width="20" style="margin-top:19px; margin-left: 20px;"></div>
+	  <div style="width: 74px; height:var(--topo);"><img src="img/procura.png" width="20" style="margin-left: 20px;"></div>
 	</div>
 </div>
 </div>
@@ -390,21 +391,43 @@ $(window).load(function() {
 <div class="resize_content" style="font-size:19px;">
 
 	<!-- PRIMEIRA FOTO -->
-  <div id="backgroundChanger">
-    <img src="img/HEAD.jpg" class="active primeira_foto">
-    <img src="img/HEAD2.jpg" class="primeira_foto">
-    <img src="img/HEAD3.jpg" class="primeira_foto">
-  </div>
-  
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="img/HEAD.jpg" class="primeira_foto">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="img/HEAD2.jpg" class="primeira_foto">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="img/HEAD4.jpg" class="primeira_foto">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/HEAD3.jpg" class="primeira_foto">
+    </div>    
+    </div>
+    <br>
+    
+    <div style="text-align:center; display:none;">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+    
 
 	
 	<!-- DESCRIÇÃO PRIMEIRA FOTO -->
-	<div class="foto_descricao" style="margin-top:0px;">
+	<div class="foto_descricao" style="margin-top:-19px;">
     <svg style="fill:#C4170C;" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
     <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"></path>
     <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"></path>
   </svg> 
-  Foto: Claudiana Motta (Resultados após 26 dias)</div>
+  Slideshow: Resultados reais da Fórmula</div>
 	
 	<!-- INICIO DO TEXTO -->
   Estima-se que as rugas e linhas de expressão afetam mais de 4 bilhões de pessoas em todo o mundo, homens e mulheres. No Brasil, cerca de 70% da população têm alguma queixa relacionada a pele, seja por conta das rugas ou manchas, e a procura pela pele jovial com aspecto natural sempre é buscada.<br><br>
@@ -1071,3 +1094,26 @@ executeWhenReachedPagePercentage(10, function() {
 
 
 </script>
+
+<script>
+  //SLIDESHOW
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
