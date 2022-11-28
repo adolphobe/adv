@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <title>Novidade - Veja agora essa noticia!</title>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=EGHahSJlXOyoizAEHwdt2aNrnny0wT-9AQ9jVeFWn_L4FAdgSE1ozXJNh8hMJwayiSXJjWRGFYLiXY4NVQQuJEHwPbbX8t6VHH2XArrhlxs" charset="UTF-8"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript" src="script/pixel.js"></script>
 
 	<script>
@@ -14,22 +15,12 @@
   //TABOOLA PAGE VIEW
   window._tfa.push({notify: 'event', name: 'page_view', id: taboola_pixel});
 
-
-
-  //TABOOLA VIEW CONTENT
-    //Verifica se sessão está visivel na tela
-    $(window).on('scroll',function() {
-      if (checkVisible($('.marca_view_content'))) {
-        window._tfa.push({notify: 'event', name: 'view_content', id: taboola_pixel});
-          $(window).off('scroll');
-      } else {}
-  });
-
+  //TABOOLA VIEW CONTENT NO FIM DA PAGINA
 
 
   $(document).on('click', '.GO-PV', function () {
-    location.href = link_destino;
-});
+		location.href = link_destino;
+	});
 </script>
 
 <script type="text/javascript">
@@ -40,10 +31,36 @@
     })(window, document, "clarity", "script", "en2s850k9j");
 </script>
 
-
   </head>
  
  <style>
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+
 @font-face {
   font-family: "Open Sans";
   font-weight: 700;
@@ -240,7 +257,7 @@
 	}
 	.fb-comments-comment-actions likes {
 		font-size: 13px;
-		background: url(../img/like.webp);
+		background: url(img/like.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 		margin-top: -10px;
@@ -283,7 +300,7 @@
 	.resize_head{width:100%;}
 	.resize_content{width:100%; font-size:20px; letter-spacing:-0.025em; overflow-wrap:break-word;}
 	
-	h1{font-size:32px; letter-spacing: -0.04em; font-weigth:700; line-height:110%;}
+	h1{font-size:32px; letter-spacing: -0.04em; font-weight:700; line-height:110%;}
 	.h1_tipo2{font-size:27px;}
 	
 	h2{font-size: 16px; line-height:150%; font-weight:400; color:#555;}
@@ -293,7 +310,7 @@
 	.quote{font-size:24px; border-left: 4px solid #CD0000; padding-left:16px; font-weight:600; line-height:150%; letter-spacing: -0.035em; margin-top:29px; margin-bottom:34px; color:#111;}
 	.content_divider{margin-top:25px; height:20px; border-top:1px solid #ccc;}
 	
-	.box_comentarios{max-width: calc(100% - 80px);  border: 1px solid #e9ebee; border-radius: 3px; padding: 0 15px;padding-bottom: 15px; margin: auto;   position: relative; color: #4267b2; margin-top: 30px;}
+	.box_comentarios{max-width: calc(100% - 80px);  border: 1px solid #e9ebee; border-radius: 3px; padding: 0 15px;padding-bottom: 15px; margin: auto;   position: relative; color: #4267b2;}
 	.play_button{width:70px;}
 	.play{position:absolute; width:100%;  text-align: center; vertical-align:middle;display:table-cell; margin-top:50%; }
 	.call_to_action{font-size:19px;}
@@ -325,7 +342,7 @@
 	}
 	
 
-	.next{padding-bottom: 55%; margin-top:35px; background-image: url("img/next.jpg"); background-blend-mode: color; background-color: #0000005e; background-position: center center; background-size: 100%;background-repeat: no-repeat; display: flex; justify-content: center; align-items: center;}
+	.next{padding-bottom: 55%; margin-top:35px; background-image: url(""); background-blend-mode: color; background-color: #0000005e; background-position: center center; background-size: 100%;background-repeat: no-repeat; display: flex; justify-content: center; align-items: center;}
 	.call_to_action{width:100%; padding:25px; background-color:#cb2d10; color:white; border:none; border-radius:6px; margin-top:15px;}
 	.call_to_action:hover{background:#e13a1c;}
 	
@@ -335,19 +352,18 @@
 	
 </style>
   <body>
- <div class="adv">ADVERTORIAL</div>
+
 <div class="topo">
 <div class="resize">
 	<div class="container">
-	  <div style="width: 50px; height:var(--topo);"><img src="img/menu.png" width="23" style="margin-top:19px;"></div>
+	  <div style="width: 74px; height:var(--topo);"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/menu.png" width="20px"></div>
 	  <div style="width: 160px; height:var(--topo); font-size: 25px; font-weight:600; letter-spacing:-0.04em;">
 	  
 	  <!-- NOME PORTAL DE NOTICIA -->
-	  <svg style="height: 34px;
-	  vertical-align: middle;" fill="none" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg"><path d="M30.167 4.866L38.12.134C38.99-.295 40 .345 40 1.512V30.31c0 .54-.585 1.133-1.307 1.133h-3.655a1.315 1.315 0 01-1.306-1.323V9.352l-2.444 1.458c-.868.426-1.855-.237-1.855-1.213V6.055c0-.507.285-.968.734-1.19zM14.11 25.831c-3.246 0-5.977-2.607-5.977-6.415 0-3.86 2.73-6.416 5.977-6.416 3.246 0 5.925 2.555 5.925 6.416 0 3.808-2.68 6.415-5.925 6.415zm7.368-18.463c-.773 0-1.236.469-1.236 1.251v1.356c-1.392-1.722-3.968-3.026-6.545-3.026C7.411 6.95 2 12.374 2 19.467c0 7.094 5.1 11.997 11.542 11.997a8.67 8.67 0 006.389-2.764c-.05 4.954-2.627 7.198-7.059 7.198-2.37 0-4.586-.731-7.161-2.4-.67-.469-1.443-.313-1.804.418L2.36 36.993c-.36.73-.257 1.408.464 1.877C6.02 40.956 9.782 42 13.028 42c8.502 0 13.19-4.643 13.19-15.335V8.62c0-.782-.463-1.251-1.236-1.251h-3.504z" fill="#fff"></path></svg>
+	 Saúde
 	  
 	  </div>
-	  <div style="width: 50px; height:var(--topo);"><img src="img/procura.png" width="20" style="margin-top:19px;"></div>
+	  <div style="width: 74px; height:var(--topo);"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/procura.png" width="20" style="margin-left: 20px;"></div>
 	</div>
 </div>
 </div>
@@ -355,11 +371,11 @@
 <div class="conteudo_pagina">
 <div class="resize_head">
 
-	<!-- TITULO -->
-	<h1>Nova Fórmula que Rejuvenesce Mulheres faz uma troca total de pele, acabando com Rugas e Manchas em 21 dias.</h1>
+	<!--  -->
+	<h1>Sérum com Tropocolágeno, uma substância segura e recém aprovada pela Anvisa elimina nossa 'pele velha' e faz nascer pele novinha em folha. </h1>
 	
 	<!-- SUB TITULO -->
-	<h2>Usando esse novo sérum rejuvenescedor nunca foi tão fácil acabar com as rugas e marcas da pele!</h2>
+	<h2>Resultados começam aparecer a partir de duas semanas de uso</h2>
 	
 	<!-- MATERIA FEITA POR: -->
 	<div class="por"> Por Cristina Gomes e Felipe Moreira, G1  </div>
@@ -376,158 +392,191 @@
 <div class="resize_content" style="font-size:19px;">
 
 	<!-- PRIMEIRA FOTO -->
-	<img src="img/fatima.webp" class="primeira_foto">
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/HEAD.webp" class="primeira_foto">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/HEAD2.webp" class="primeira_foto">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/HEAD4.webp" class="primeira_foto">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/HEAD3.webp" class="primeira_foto">
+    </div>    
+    </div>
+    <br>
+    
+    <div style="text-align:center; display:none;">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+    
+
 	
 	<!-- DESCRIÇÃO PRIMEIRA FOTO -->
-	<div class="foto_descricao">Matéria no programa da Fatima Bernardes - Foto: Portal G1</div>
+	<div class="foto_descricao" style="margin-top:-19px;">
+    <svg style="fill:#C4170C;" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"></path>
+    <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"></path>
+  </svg> 
+  Slideshow: Cristiane, Marta, Antonia e Leonor, pacientes que testaram e tiveram excelentes resultados</div>
 	
 	<!-- INICIO DO TEXTO -->
-	Em programa da própria rede globo foi apresentando um novo método rejuvenescedor com a capacidade de trazer de volta a beleza e vitalidade da sua juventude, deixando diversas mulheres do Brasil esperançosas, <strong style="text-decoration: underline;color: #ac260e;">não importando se você tem 25 ou 72 anos.</strong><br><br>
+  Um estudo realizado na univerdade de Oxford em parceria com a Unicamp garantiu a combinação de compostos <strong>capazes de combater e eliminar</strong> manchas, rugas e marcas de expressões faciais de uma vez por todas.<br><br>
+  Poderoso composto <strong>conhecido como Tropocolágeno</strong> permite a troca completa da nossa pele velha por pele nova, com total segurança e eficácia.<br><br>
 
-	E uma coisa na vida é certa: os reflexos da idade chegarão para todas nós. Por volta dos 40 anos, já se torna perceptível o surgimento de rugas, marcas de expressão e manchas na pele, elas acabam se tornando comuns e condenam totalmente a idade de uma mulher, diminuindo sua autoestima e lhe causando uma série de inseguranças.<br><br>
 
-	Acontece que esses problemas são muito mais comuns do que parecem, uma <strong>pesquisa da universidade de Oxford (Inglaterra)</strong>, afirma que ao menos 93,65% das mulheres entre 39 a 65 anos, são afetadas por algum problema de pele, causado pela falta de tempo para dedicar a saúde e a beleza da pele, isso aumenta a procura por tratamentos caros e perigosos.<br><br>
+  <a href="https://serum-gold.shop/pv01" class="GO-PV"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/tropo.webp" class="primeira_foto" style="padding-bottom:0px"></a>
+<div class="foto_descricao" style="padding-bottom:0px;"> <svg style="fill:#C4170C;" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+  <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"></path>
+  <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"></path>
+</svg> Foto: Ação do Tropocolágeno na pele</div>
+  <br>
+  
 
-	O fato é que para as mulheres a pele é algo extremamente importante, aumentando ainda mais as consequências desses problemas.<br><br>
+<!-- MARCANDO VIEW CONTENT AQUI ATRAVES DA CLASS -->
+<h1 class="h1_tipo2 marca_view_content" style="font-size:32px;">O que é o Tropocolágeno? E quais são seus benefícios?</h1>
+
+
+	Ainda pouco conhecido o Tropocolágeno, formado por três cadeias polipeptídicas é o <strong>composto mais completo de colágeno do mundo</strong>, apesar de sua descoberta ter acontecido no ano de 2001, por cientistas da Rousselot, seu uso em cosméticos foi possível somente agora. <br><br>
+
+  <a href="https://serum-gold.shop/pv01" class="GO-PV"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/a1.webp" class="primeira_foto"></a>
+	<div class="foto_descricao" style="padding-bottom:20px;"> <svg style="fill:#C4170C;" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"></path>
+    <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"></path>
+  </svg>  Foto: Eliandra Alves (resultados com 31 dias de uso)</div>
+
+  Isso porque existia uma grande dificuldade de ter um composto altamente eficaz de alto poder reparador que ainda pudesse estar disponível ao consumidor final.<br><br>
+
+  Felizmente isso agora é possivel e o <a href="https://serum-gold.shop/pv01" class="GO-PV">Serum Gold 24K</a> é o <strong>primeiro produto</strong> à ser oferecido no mercado com esta tecnologia.<br><br>
+
+
+  <a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center;"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/experimente2.webp" class="primeira_foto action_mobile" style="padding-bottom:20px; width:100%;"></div></a>
+
+
+  <h1 class="h1_tipo2 marca_view_content" style="font-size:32px;">Especialista aprova e comenta sobre</h1>
+	A dermatologista Fernanda Gonçalves especialista em cuidados da pele, aprovou e garantiu ela mesma a eficácia, <strong>veja o que ela disse.</strong><br><br>
+
+	<!-- <strong>Recém liberado pela Anvisa</strong> um novo Sérum, tem despertado a atenção de homens e mulheres por todo Brasil, chamando atenção de atrizes até donas de casa.<br><br> -->
+
+
+	<a href="https://serum-gold.shop/pv01" class="GO-PV"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/b-a.webp" class="primeira_foto" style="padding-bottom:0px"></a>
+
+  <div class="foto_descricao" style="margin-top:10px;">
+    <svg style="fill:#C4170C;" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"></path>
+    <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"></path>
+  </svg> 
+  Foto: Dermatologista Fernanda Gonçalves</div>
 	
-	A <strong>professora Fernanda Gonçalves</strong>, fala um pouco sobre como lida com as Rugas e marcas de expressão:<br><br>
-
-	<a href="https://serum-gold.shop/pv01" class="GO-PV"><img src="img/b-a.webp" class="primeira_foto" style="padding-bottom:0px"></a>
-	
-	<div style="    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    padding: 11px;
-    background: #ece6e5;
-    border-radius: 5px;
-    margin-bottom: 12px;
-}">Fernanda Gonçalves, 59 anos, mãe.</div>
-
-	<div class="depoiment" style="border-left: 4px solid #cd0000;   padding-left:13px 13px 13px 20px;">
-	"Trabalho desde os 21 anos na área da educação como professora pedagoga em minha cidade.<br><br>
-
-	Tenho manchas na pele desde a primeira gravidez. Para piorar, aos 35 anos, comecei a perceber rugas, e logo já estavam bem profundas no primeiro ano. Isso acabou comigo!<br><br>
-
-	Percebi que muitas professoras falavam sobre minha pele, que eu precisava de um botox ou algo parecido para não ficar tão feia, isso era horrível.<br><br>
-
-	Não quis apelar para o Botox, então conheci o <a href="https://serum-gold.shop/pv01" class="GO-PV">Serum Gold 24K</a> através de uma Dermatologista que atende na Região de Campinas. <strong>Em menos de 30 dias, minha pele era outra!</strong><br><br>
-	
-	As professoras começaram a me perguntar o que eu estava usando, falando que minha pele agora parecia 20 anos mais jovem e sem nada de manchas ou rugas.<br><br>
-	
-	O jogo da auto estima virou para mim depois disso!" <span style="font-size: 15px;">- Prof. Fernanda Gonçalves</span>
+	<div class="depoiment" style="border-left: 4px solid #cd0000;   padding-left:13px 13px 13px 20px; margin-bottom:10px;">
+	"Trabalho há 9 anos na área, e frequentemente vemos a indústria lançar soluções milagrosas para todos tipos de problemas, mas o mais engraçado é que aqui realmente temos uma combinação de nutrientes, vitaminas e claro o <a href="https://serum-gold.shop/pv01" class="GO-PV">Tropocolágeno</a> que faz toda diferença e causa uma <strong>verdadeira renovação celular</strong>, garantindo resultados rápidos e expressivos.<br><br>
+  
+  Meus próprios resultados falam por si só! <br><br>
+  
+  Ter um produto tão acessível assim para todas mulheres e homens, e que garante um resultado desses em casa mesmo, é algo realmente incrível." <span style="font-size: 15px;"> - comenta a especilista Fernanda Gonçalves.</span>
 	</div>
 	
-	<a href="https://serum-gold.shop/pv01" class="GO-PV"><img src="img/a1.webp" class="primeira_foto"></a>
-	<div class="foto_descricao" style="padding-bottom:0px;">Foto: Eliandra Alves (resultados com 31 dias de uso)</div>
-	
 
-  <!-- MARCANDO VIEW CONTENT AQUI ATRAVES DA CLASS -->
-	<h1 class="h1_tipo2 marca_view_content">Qual foi a Técnica Usada Por Ela?</h1>
-	
-	Eliandra Alves já frustrada com diversas tentativas de resolver o seu problema, procurou uma dermatologista famosa no instagram, ela a recomendou um novo produto que vinha causando um estouro de venda pelo Brasil, chocando todos as mulheres com sua eficácia.<br><br>
+  <h1 class="h1_tipo2" style="font-size:32px;">O Sérum que caiu no gosto das famosas</h1>
 
-	O produto era o <a href="https://serum-gold.shop/pv01" class="GO-PV">Serum Gold 24K</a>, <strong>um sérum natural desenvolvido diretamente para rejuvenescer mulheres</strong>, combatendo o envelhecimento, e atuando diretamente como um tratamento para rugas, linhas de expressão e manchas na pele.<br><br>
+  Grandes apresentadoras e artistas também resolveram conquistar esse sentimento de juventude e satisfação com sua beleza.<br><br>
+  
+  
+    <!-- PRIMEIRA FOTO -->
+    <div class="slideshow-container">
+  
+      <div class="mySlides2 fade">
+        <img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/tv1.webp" class="primeira_foto">
+      </div>
+      
+      <div class="mySlides2 fade">
+        <img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/tv2.webp" class="primeira_foto">
+      </div>
+      
+      <div class="mySlides2 fade">
+        <img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/tv3.webp" class="primeira_foto">
+      </div>
+  
+      </div>
+      <br>
+      
+      <div style="text-align:center; display:none;">
+        <span class="dot2"></span> 
+        <span class="dot2"></span> 
+        <span class="dot2"></span> 
+      </div>
+      <div class="foto_descricao" style="margin-top: -15px;"> <svg style="fill:#C4170C;" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+        <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"></path>
+        <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"></path>
+      </svg>  Slideshow: Fátima Bernardes, Kelly Key, Ana Hickmann</div>
 
-	A doutora Andressa Stevens é uma dermatologista que teve contato direto com os desenvolvedores do Sérum Gold 24K, <strong>ela explica</strong> como é possível ter um resultado tão surpreendente.<br><br>
+      A própria apresentadora <strong>Fátima Bernardes</strong> fez questão de deixar um relato com seus resultados:<br><br>
+  
+      <div class="depoiment" style="border-left: 4px solid #cd0000;   padding: 13px 13px 13px 20px;">
+        “As vezes o pessoal não percebe a gente envelhecendo pelas maquiagens e toda produção que temos na TV, mas a gente sabe que em casa sem maquiagem a história é outra. As rugas, marcas de expressão e manchinhas sempre vão aumentando com o passar do tempo e a nossa luta pra ter a pele sempre bonita só vai aumentando, minha grande amiga e dermatalogista, a Dra. Rebeca Soares, me recomendou o 	<a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum com Tropocolágeno</a> e os resultados estão sendo ótimos! A gente fica feliz porque no fundo ninguém gosta das marquinhas e linhas de expressão, ou a pele flácida.. queremos sempre estar lindas!”
+        </div>
+
+  	
+  <h1 class="h1_tipo2 marca_view_content" style="font-size:32px;">Por trás da formula...</h1>
 	
-	
-	<a href="https://serum-gold.shop/pv01" class="GO-PV"><img src="img/dermato.jpg" class="primeira_foto"></a>
-	<div class="foto_descricao" style="padding-bottom:0px;">Foto: Dra. Andressa Stevens</div>
+	<a href="https://serum-gold.shop/pv01" class="GO-PV"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/formula.webp" class="primeira_foto"></a>
+  <div class="foto_descricao" style="padding-bottom:0px;"> <svg style="fill:#C4170C;" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"></path>
+    <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"></path>
+  </svg>  Foto: Dra. Andressa Stevens</div>
+
+  <div style="padding-top:18px;">A doutora nascida na Inglaterra que vive no Brasil desde os seus 7 anos de idade, comenta: </div>
 	
 	<div class="quote" style="font-weight: normal;  font-size: 19px;">
-	“É realmente impressionante o seu funcionamento, diferente de absolutamente tudo que já vi, normalmente os tratamentos possuem diversas falhas, funcionando de pessoa para pessoa, corrigindo apenas problemas pequenos, mas <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a> é totalmente diferente disso a forma de sua composição é funcional ao ponto de tornar a pele de uma pessoa de 70 anos tão jovial quanto uma mulher nos seus 25, é literalmente uma troca de pele” <span style="font-size: 15px;">- Dra. Andressa Stevens</span>
+	“Demoramos pra chegar em um produto completo, que pudesse ser usado em casa, e que garantisse realmente um efeito de <strong>"máquina do tempo"</strong>, mas depois de muitos esforços, com muito orgulho digo que conseguimos!<br><br>
+
+  Brinco que com o <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a> criamos a <strong>"fórmula perfeita"</strong> de Biotina, Niacina, Cobre, Zinco, Minerais além das Vitaminas A, E, C, B5 e B6 e o <a href="https://serum-gold.shop/pv01" class="GO-PV">Tropocolágeno</a> que faz com que isso tudo acontença!<br><br>
+  
+  Temos inúmeros casos onde a mulher ou o homem parecem ter voltado <strong>5 ou até 10 anos atrás</strong>, o resultado é incrível!
 	</div>
 	
-	<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center;"><img src="img/bt_experimente.png" class="primeira_foto action_mobile" style="padding-bottom:20px; width:300px;"></div></a>
 
-	<center><img src="img/gif-compress.gif" width="100%"></center>
+  <h1 class="h1_tipo2 marca_view_content" style="font-size:32px;">Gostei! Mas como uso?</h1>
+		<a href="https://serum-gold.shop/pv01" class="GO-PV"><center><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/gif-compress.gif" width="100%"></center></a>
+    <div class="foto_descricao" style="padding-bottom:20px;">Vídeo: ação do sérum rejuvenescedor</div>
+
+    Basta utilizar o <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a>, o <strong>primeiro produto com Tropocolágeno do Brasil</strong>, uma vez ao dia.<br<<br>
+    
+    Lave o rosto com sabonete para aplicar o sérum diretamente na pele:<br><br>
+
+Coloque uma pequena quantidade na ponta do dedo indicador, aplique com leves toques na região do rosto que deseja maior efeito. Evite expressões faciais até a secagem, aguarde de 3 a 7 minutos enquanto o produto seca e age na pele.<br><br>
 	
-	<h1 class="h1_tipo2">Sérum Gold 24K Realmente Funciona?</h1>
+    <a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center;"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/experimente2.webp" class="primeira_foto action_mobile" style="padding-bottom:20px; width:100%;"></div></a>
 	
-	Milhares de mulheres ao redor do Brasil já provaram dos resultados de <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a>, sua grande eficácia vem mudando cada vez mais a vida mulheres que não se sentiam bem com sua aparência.<br><br>
-
-A maior prova de seus benefícios é a imensa quantidade de depoimentos recebidos todos os dias.<br><br>
 
 
-	<img src="img/resultados2.png" class="primeira_foto">
-	<div class="foto_descricao" style="padding-bottom:20px;">Foto: Cristiane Gomes à esquerda, e Emanuela Lacerda à direita.</div>
-	
-	Essas são Cristina e Emanuela respectivamente, duas mulheres brasileiras que foram perdendo sua aparência com o passar do tempo, mas que recuperaram a beleza e juventude com a ajuda de <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a>, assim como foi mostrado no programa<br><br>
-
-E são apenas duas das milhares de vidas que Sérum Gold 24K já transformou, <strong>o que prova que Sim, ele funciona!</strong><br><br>
-	
-<h1 class="h1_tipo2">O Sérum que caiu no gosto das artistas</h1>
-
-Grandes artistas também resolveram conquistar esse sentimento de juventude e satisfação com sua beleza. A própria <strong>Amanda Raia</strong>, sobrinha da grande Atriz Claudia Raia foi uma delas, e fez questão de deixar um relato com seus resultados:<br><br>
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center; background:#fff3e5"><img src="img/resultados3.jpg" class="primeira_foto" style="width:80%; padding-bottom:0px"></div></a>
-<div style="    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    padding: 11px;
-    background: #ece6e5;
-    border-radius: 5px;
-    margin-bottom: 12px;
-}">Amanda Raia, 35 anos, mãe e atriz</div>
-
+    <h1 class="h1_tipo2" style="font-size:32px;">Testado e Aprovado!</h1>
+  <a href="https://serum-gold.shop/pv01" class="GO-PV"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/Img8.webp" class="primeira_foto" style="padding-bottom:0px"></a>
+  <div style="    font-size: 18px;
+      text-align: center;
+      font-weight: bold;
+      padding: 11px;
+      background: #ece6e5;
+      border-radius: 5px;
+      margin-bottom: 12px;
+  }"> Miranda de Oliveira (resultados com 28 dias de uso)</div>
 <div class="depoiment" style="border-left: 4px solid #cd0000;   padding: 13px 13px 13px 20px;">
-“A idade chegando, os filhos, os muitos anos de trabalho com falta de tempo pra tudo, assim fica impossível fugir de problemas de pele. <strong>As rugas, marcas de expressão e manchas chegaram pra mim também</strong>, assim como vão chegar para você e para qualquer mulher, não da pra escapar.<br><br>
-
-Eu já estava com várias rugas e manchas que me deixavam muito chateada, mas na vida de atriz sou obrigada a estar perfeita para tudo, por isso precisava de várias daquelas sessões de skin care pra ficar bonita, mas a verdade é que aquilo só desgasta a pele.<br><br>
-
-Até que meu Dermatologista encontrou <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a> lá nos Estados Unidos. E Foi uma maravilha, não precisei mais daquelas longas sessões pra esconder rugas, até porque não tinha mais nenhuma, nem manchas nem nada.<br><br>
-
-<strong>Minha pele ficou muito mais jovem</strong> e linda de novo, mal acredito que estou sem nenhuma ruga. Estava louca pra contar esse segredo!!”
-</div>
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center; background:#fff3e5"><img src="img/novo1-2.webp" class="primeira_foto" style="padding-bottom:0px; width:80%;"></div></a>
-<div style="    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    padding: 11px;
-    background: #ece6e5;
-    border-radius: 5px;
-    margin-bottom: 12px;
-}">Andreia Camargo</div>
-
-<div class="depoiment" style="border-left: 4px solid #cd0000;   padding: 13px 13px 13px 20px;">
-“Vivia sempre com manchas no rosto por conta do melasma, era um terror só, eu mal consegui me reconhecer quando usei o <a href="https://serum-gold.shop/pv01" class="GO-PV"><a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a></a>, já estava acostumada com meu rosto cheio de manchas, mas agora e chegaram a me dar uns 7 anos a menos, tô finalmente me sentindo bonita de novo.”
-</div>
-
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center; background:#fff"><img src="img/caso3.jpg" class="primeira_foto" style="padding-bottom:0px; width:90%;"></div></a>
-<div style="    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    padding: 11px;
-    background: #ece6e5;
-    border-radius: 5px;
-    margin-bottom: 12px;
-}">Mauricelia Costa
-</div>
-
-<div class="depoiment" style="border-left: 4px solid #cd0000;   padding: 13px 13px 13px 20px;">
-“Este <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a> me tirou completamente do poço e me fez dar uma enorme volta por cima, eu me sentia desanimada, frustrada comigo mesma por estar feia, até que minha amiga me indicou esse produto e agora finalmente consigo me olhar no espelho de novo, me sinto renovada.”
-</div>
-
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center; background:#fff3e5"><img src="img/marcia rosa botelho.webp" class="primeira_foto" style="width:70%; padding-bottom:0px"></div></a>
-<div style="    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    padding: 11px;
-    background: #ece6e5;
-    border-radius: 5px;
-    margin-bottom: 12px;
-}">Márcia Rosa Botelho</div> 
-
-<div class="depoiment" style="border-left: 4px solid #cd0000;   padding: 13px 13px 13px 20px;">
-“Antes de fazer o meu tratamento, me davam sempre uns 10 anos a mais do que eu tinha, me sentia muito mal com isso, afinal fui sempre muito vaidosa com a minha aparência, eu testava tudo pra tentar ficar bonita de novo mas nada adiantava, até que meu dermatologista me indicou o <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a>, isso faz uns 2 meses e olha, me sinto totalmente renovada, sem nenhuma comparação como estava antes”
+O <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a> me tirou completamente do poço e me fez dar uma enorme volta por cima, eu me sentia desanimada, frustrada comigo mesma por estar envelhecendo muito rápido, até que minha amiga me indicou esse produto e agora finalmente consigo me olhar no espelho de novo, me sinto renovada.”
 </div>
 
 Com esses resultados você já deve ter percebido como é fácil voltar a ser jovem novamente alcançando assim a pele que sempre sonhou, sem rugas, sem marcas de expressão na pele e principalmente com uma pele firme e bem hidratada como sempre deveria ter sido!<br><br>
 
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center;"><img src="img/bt_experimente.png" class="primeira_foto action_mobile" style="padding-bottom:20px; width:300px;"></div></a>
+<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center;"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/experimente2.webp" class="primeira_foto action_mobile" style="padding-bottom:20px; width:100%;"></div></a>
 
 
 <h1 class="h1_tipo2">Conheça o Sérum Gold 24K, Previne e Ajuda no Tratamento das Rugas.</h1>
@@ -536,200 +585,37 @@ Com esses resultados você já deve ter percebido como é fácil voltar a ser jo
 
 Os dermatologistas recomendam pois o sérum <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a>  possui as propriedades principais para um tratamento eficaz de pele, agentes hidratantes e ácido glicólico, que garantem assim um efeito rejuvenescedor.<br><br>
 
-<center><a href="https://serum-gold.shop/pv01" class="GO-PV"><img src="https://theskincareedit.com/.image/t_share/MTc0OTQyOTA4ODE2ODI4MDc0/how-to-use-vitamin-c-serum-and-acids-1.jpg" width="100%"></a></center>
-<div class="foto_descricao" style="padding-bottom:0px;">Foto: Aplicação prática do Sérum Gold 24K</div>
-
-<h1 class="h1_tipo2">Fácil de Usar Com Efeitos Duradouros</h1>
-
-O uso do <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a> é simples, basta lavar o rosto com sabonete para aplicar o sérum diretamente na pele:<br><br>
-
-Coloque uma pequena quantidade na ponta do dedo indicador, aplique com leves toques na região do rosto que deseja maior efeito. Evite expressões faciais até a secagem, aguarde de 3 a 7 minutos enquanto o produto seca e age na pele.<br><br>
-
-Sérum Gold 24K também contém componentes que ajudam a regular os níveis de oleosidade da pele, um problema comum em pessoas com espinhas, e marcas no rosto.<br><br>
+<center><a href="https://serum-gold.shop/pv01" class="GO-PV"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/HOW TO USE.webp" width="100%"></a></center>
+<div class="foto_descricao" style="padding-bottom:25px;">Foto: Aplicação prática do Sérum Gold 24K</div>
 
 
-<h1 class="h1_tipo2">Quais São Os Benefícios Do Sérum Gold 24K?</h1>
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a> é o único produto produzido por uma seleção natural de Sérum especial que traz efeitos renovadores, onde ele atua como um Botox natural que reconstrói a pele. Veja algum de seus principais benefícios:<br><br>
-
-<h1 class="h1_tipo2">Acabe com as rugas e garanta sua beleza de volta</h1>
-De forma rápida, eficaz e sem nenhum efeito colateral, você terá sua pele sem nenhuma ruga, mancha, ou linha de expressão, retomando a beleza e a confiança que você merece!<br><br>
 
 
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><img src="img/agora-foi-1.webp" class="primeira_foto" style="padding-bottom:0px"></a>
-<div class="foto_descricao" style="padding-bottom:25px;">Foto: Beth Machado (resultados com 25 dias de uso)</div>
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center;"><img src="img/bt_experimente.png" class="primeira_foto action_mobile" style="padding-bottom:20px; width:300px;"></div></a>
-
-<h1 class="h1_tipo2">Tecnologia de Lifting Exclusiva</h1>
-Responsável pela “Bomba de Colágeno” que faz sua pele se regenerar como uma Pele de 20 anos de idade desde os primeiros usos.<br><br>
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><img src="img/gif.gif" class="primeira_foto" style="padding-bottom:0px"></a>
+<a href="https://serum-gold.shop/pv01" class="GO-PV"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/gif.gif" class="primeira_foto" style="padding-bottom:0px"></a>
 <div class="foto_descricao" style="padding-bottom:0px;">Vídeo: ação do sérum rejuvenescedor</div>
 
-<h1 class="h1_tipo2">Tudo Que Você Precisa Em Um Só Lugar!</h1>
-Ele reduz a aparência de rugas, inchaço sob os olhos, pés de galinha, bolsas, pele seca, Bigode chinês linhas finas... tudo isso NO PRIMEIRO USO! Aumentando a elasticidade e sustentação da pele, hidratando e restaurando!<br><br>
+<br>
 
 
-<h1 class="h1_tipo2">Resultados Já Nos Primeiros Usos</h1>
+<h1 class="h1_tipo2 marca_view_content" style="font-size:32px">Nossa reportagem garantiu uma oferta imperdível</h1>
 
-Com resultados permanentes em menos de 15 dias! Reduzirá muito a aparência de rugas, inchaço sob os olhos, pés de galinha, bolsas, pele seca, bigode chinês, linhas finas em tempo recorde e permanente!<br><br>
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center; background:#fff3e5; margin-bottom:0px"><img src="img/novo-2.webp" class="primeira_foto" style="width:80%;"></div></a>
-<div class="foto_descricao" style="padding-bottom:20px;">Foto: Edda Antonia Lenir (resultados com 23 dias de uso)</div>
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a> é o único que possui um Sérum altamente concentrado diferente de todos os outros que não possuem uma propriedade de tal tamanho que garante o rejuvenescimento.<br><br>
-
-Grandes modelos usam o Botox como tentativa de manter a pele jovial, mas o Botox é um tratamento muito caro e demorado.<br><br>
-
-Diferentemente do <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a>, que possui resultados eficazes e rápidos! Melhores que o Botox a curto e longo prazo, livre de qualquer tipo de dor ou desconforto.<br><br>
+  Por tempo extramente limitado, nossa reportagem garantiu descontos exclusivos para pessoas que possam se interessar no <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a>, basta visitar o site oficial <a href="https://serum-gold.shop/pv01" class="GO-PV">clicando aqui</a>, mas atenção os descontos são somente até <span class="data_atual">  /  /   </span>, sua grande eficácia vem mudando cada vez mais a vida de homens e mulheres que não se sentiam bem mas que agora estão tendo sua vida transformada!<br><br>
 
 
-<h1 class="h1_tipo2" style="font-size:32px">E Quais São Seus Diferenciais?</h1>
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a> se diferencia de todos outros produtos pois possui as duas principais atuações necessárias para o rejuvenescimento da pele, a hidratação e o ácido glicólico.<br><br>
-
-Esses componentes fazem com que a efetividades seja diferente de qualquer outra coisa utilizada para problemas de pele<br><br>
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><center><img src="img/comparativo.webp" class="primeira_foto" style="padding-bottom:20px"></center></a>
-
-A maioria dos produtos apenas fazem promessas que não são cumpridas, sempre procurando o lucro sem ajudar realmente quem precisa. Diferente do <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a>.<br><br>
-
-Suas propriedades são focadas em resolver qualquer tipo de problema de pele, como rugas, marcas de expressão, acnes, manchas e até mesmo melasmas.<br><br>
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center;"><img src="img/bt_experimente.png" class="primeira_foto action_mobile" style="padding-bottom:20px; width:300px;"></div></a>
-
-<h1 class="h1_tipo2">Veja Os Resultados Do Sérum Gold 24K!</h1>
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center; background:#fff3e5"><img src="img/EDNA.jpg" class="primeira_foto" style="width:80%; padding-bottom:0px"></div></a>
-
-<div style="    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    padding: 11px;
-    background: #ece6e5;
-    border-radius: 5px;
-    margin-bottom: 12px;
-}">Edna Oliveira</div>
-
-<div class="depoiment" style="border-left: 4px solid #cd0000;   padding: 13px 13px 13px 20px">
-“A primeira coisa que me chamou muito a atenção foi sentir a minha pele puxando no mesmo sentido em que eu estava aplicando ele, sabe? Uma sensação curiosa que se transforma logo em felicidade quando a gente vê a pele lisinha que fica depois”
-</div>
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center; background:#fff3e5"><img src="img/antoniadasilvacunha.webp" class="primeira_foto" style="width:100%; padding-bottom:0px"></div></a>
-<div style="    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    padding: 11px;
-    background: #ece6e5;
-    border-radius: 5px;
-    margin-bottom: 12px;
-}">Antonia Da Silva Cunha</div>
-
-<div class="depoiment" style="border-left: 4px solid #cd0000;   padding: 13px 13px 13px 20px;">
-“Eu vou te falar já usei de tudo nada adiantava eu tinha poucas manchas na pele mas as rugas e marcas de expressão eram muitas, já não sabia oque fazer, mas esse <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a>  foi diferente já no primeiro uso as marcas da idade sumiram, e nem deu uma semana minha pele já não tinha nenhuma mancha!”
-</div>
-
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center; background:#fff3e5"><img src="img/vilma.webp" class="primeira_foto" style="width:80%; padding-bottom:0px"></div></a>
-<div style="    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    padding: 11px;
-    background: #ece6e5;
-    border-radius: 5px;
-    margin-bottom: 12px;
-}">Vilma Seraglio Gonçalvez</div>
-
-<div class="depoiment" style="border-left: 4px solid #cd0000;   padding: 13px 13px 13px 20px">
-“Eu fiquei muito tempo buscando uma forma de arrumar esse problema que eu tinha com as rugas na pele elas não saiam por nada fui até no médico e não consegui tirar elas, mas na sorte eu vi esse gel na tv fazendo o almoço, acho que foi o destino eu nem tinha costume de olhar o programa da fátima, mas quando eu vi os resultados da mulher que passou ao vivo no programa tive que garantir o meu, é bom dá pra ver que os resultados não eram montagem de tv kkkkk” 
-</div>
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center;"><img src="img/bt_experimente.png" class="primeira_foto action_mobile" style="padding-bottom:20px; width:300px;"></div></a>
-
-<h1 class="h1_tipo2">Tudo Que Você Precisa Em Um Só Lugar</h1>
-
-A fórmula completa é capaz de eliminar rugas, marcas de expressão e manchas todas juntas, te trazendo assim uma aparência jovem novamente.<br><br>
-
-Agora você vai finalmente se sentir como sempre sonhou, você verá modelos de revista e nunca mais se sentirá rebaixada a elas, pois sua pele é ainda melhor com essa fórmula.<br><br>
-
-Além disso, você não está comprando um tratamento com um preço absurdo e sem uma eficácia comprovada.<br><br>
-
-<img src="img/anvisa.webp" class="primeira_foto" style="padding-bottom:20px">
-
-O <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a> é aprovado pela própria Anvisa, pois sua fórmula é a única capaz de ser eficaz sem oferecer qualquer tipo de risco à saúde.<br><br>
-
-<h1 class="h1_tipo2">Oportunidade Única</h1>
-Bom, se você acompanhou até aqui tenho certeza que está a procura de um resultado como o de Fernanda e diversas outras mulheres do Brasil que já garantiram o <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a>.<br><br>
-
-Essa é a sua chance!! Somente aqui foi disponibilizada uma oferta vinda diretamente dos desenvolvedores do <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a>, aproveite agora pois é por tempo limitado e estoque tem previsão de acabar em poucos dias com uma oferta desse nível.<br><br>
-
-Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais bonita do que já foi.<br><br>
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><img src="img/foto4.webp" class="primeira_foto" style="padding-bottom:0px"></a>
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center;"><img src="img/bt_experimente.png" class="primeira_foto action_mobile" style="padding-bottom:20px; width:300px;"></div></a>
+  <a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center;"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/experimente2.webp" class="primeira_foto action_mobile" style="padding-bottom:20px; width:100%;"></div></a>
 	
 	
-	<h1 class="h1_tipo2">FAÇA COMO ELAS</h1>
+
+<br><br>
 	
-	<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center; background:#fff3e5"><img src="img/carlafarias.webp" class="primeira_foto" style="width:80%; padding-bottom:0px"></div></a>
-	<div style="    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    padding: 11px;
-    background: #ece6e5;
-    border-radius: 5px;
-    margin-bottom: 12px;
-}">Carla Farias</div>
-
-<div class="depoiment" style="border-left: 4px solid #cd0000;   padding: 13px 13px 13px 20px;">
-“Tive anos muito difíceis, e acredito que todo esse estresse acumulado de filhos e trabalho, junto com a idade que vem chegando, foram as principais causas de várias rugas e manchas surgindo no meu rosto, fico muito feliz pois o <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a> deu um jeito e nisso e agora posso seguir a minha vida sem essa preocupação.”
-</div>
-
-
-	<img src="img/fernandamoura.webp" class="primeira_foto" style="padding-bottom:0px; margin-top:10px;">
-	<div style="    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    padding: 11px;
-    background: #ece6e5;
-    border-radius: 5px;
-    margin-bottom: 12px;
-}">Fernanda Moura</div>
-
-<div class="depoiment" style="border-left: 4px solid #cd0000;   padding: 13px 13px 13px 20px;">
-“Eu não tinha mais ânimo para sair com as minhas amigas ou até mesmo pessoas da minha família, era doloroso me olhar no espelho pois eu praticamente não reconhecia quem era. Quando vi essa promoção do <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a> eu resolvi testar pois minhas amigas já tinham comentado comigo que funcionava, e elas estavam completamente certas, o funcionamento de <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a> é impressionante, não tem nem o que falar”.
-</div>
-	
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center; background:#fff3e5; margin-top:40px;"><img src="img/jordana.webp" class="primeira_foto" style="padding-bottom:0px; width:80%;"></div></a>
-	<div style="    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    padding: 11px;
-    background: #ece6e5;
-    border-radius: 5px;
-    margin-bottom: 12px;
-}">Jordana da Silva</div>
-
-<div class="depoiment" style="border-left: 4px solid #cd0000;   padding: 13px 13px 13px 20px;">
-“Foi o meu filho que encontrou <a href="https://serum-gold.shop/pv01" class="GO-PV">Sérum Gold 24K</a> na internet, e como eu vivo sempre reclamando da minha pele, ele resolveu comprar para mim, eu comecei a utilizar e foi sensacional! Nos primeiros meses já tive um resultado que nunca havia tido antes.”
-</div>
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><img src="img/produtofim.webp" class="primeira_foto" style="padding-bottom:0px"></a>
-
-<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center;"><img src="img/bt_experimente.png" class="primeira_foto action_mobile" style="padding-bottom:20px; width:300px;"></div></a>
-
-
-
-	
-	
+<h1 class="h1_tipo2">Comentários (143)</h1>
+	<img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/comentairos.webp" width="100%">
 	
 </div>
 </div>
 
 
-<!--
+
 
 
 <div class="box_comentarios">
@@ -740,7 +626,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         <table class="fb-comments-comment">
         <tbody>
         <tr>
-        <td rowspan="3" class="fb-comments-comment-img"><img src="/img/c1.jpg"></td>
+        <td rowspan="3" class="fb-comments-comment-img"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/c1.jpg"></td>
         <td>
         <div class="fb-comments-comment-name">
         <name>Lisbeth Cáceres</name>
@@ -748,7 +634,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         </td>
         </tr>
         <tr>
-        <td class="fb-comments-comment-text">Comecei assistir sem muita pretensão e fiquei presa até no fim kkkkk o conteúdo é interessante demais</td>
+        <td class="fb-comments-comment-text">Uso há alguns meses e tenho gostado muito, comprei por indicação de uma conhecida que teve resultados excelentes</td>
         </tr>
         <tr>
         <td class="fb-comments-comment-actions">
@@ -767,7 +653,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         <table class="fb-comments-comment">
         <tbody>
         <tr>
-        <td rowspan="3" class="fb-comments-comment-img"><img src="/img/c2.jpg"></td>
+        <td rowspan="3" class="fb-comments-comment-img"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/c2.jpg"></td>
         <td>
         <div class="fb-comments-comment-name">
         <name>Luisa Herrera</name>
@@ -775,7 +661,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         </td>
         </tr>
         <tr>
-        <td class="fb-comments-comment-text">Conheço o conteúdo da Fernanda faz tempo e digo com total propriedade que é extreeemamente funcional, prático, sem besteiras sem enrolação!!</td>
+        <td class="fb-comments-comment-text">Total transformação... quem ja usou sabe e quem não usou esta perdendo tempo... a gente fica meio assim pois sao tantos produtos hoje em dia mas esse realmente tem funcionado pra mim</td>
         </tr>
         <tr>
         <td class="fb-comments-comment-actions">
@@ -794,7 +680,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         <table class="fb-comments-comment">
         <tbody>
         <tr>
-        <td rowspan="3" class="fb-comments-comment-img"><img src="/img/c3.jpg"></td>
+        <td rowspan="3" class="fb-comments-comment-img"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/c3.jpg"></td>
         <td>
         <div class="fb-comments-comment-name">
         <name>Mariana Manrique</name>
@@ -802,7 +688,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         </td>
         </tr>
         <tr>
-        <td class="fb-comments-comment-text">Esse vídeo fez eu repensar muitas coisas no meu noivado, agora ja sei o que posso fazer sobre algumas coisas 🤩</td>
+        <td class="fb-comments-comment-text">Ótimo e cumpre seu papel!! mesmo com 47 anos parece q voltei no tempo dos 20 kkkk 🤩</td>
         </tr>
         <tr>
         <td class="fb-comments-comment-actions">
@@ -821,7 +707,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         <table class="fb-comments-comment">
         <tbody>
         <tr>
-        <td rowspan="3" class="fb-comments-comment-img"><img src="/img/c4.jpg"></td>
+        <td rowspan="3" class="fb-comments-comment-img"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/c4.jpg"></td>
         <td>
         <div class="fb-comments-comment-name">
         <name>Claudia Lopes</name>
@@ -829,7 +715,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         </td>
         </tr>
         <tr>
-        <td class="fb-comments-comment-text">Não é exagero algum dizer que a Fernanda sabe nos ajudar, eu acho incrível o quanto uma mulher como ela consegue nos passar ideias tão fáceis e praticas ao ponto de ficarmos nos perguntando "Como não pensei nisso antes?" Meu relacionamento estava um pouco complicado mas felizmente com algumas das dicas dela consegui mudar tanta coisa que eu própria fico surpresa agora 😍😍😍 kkk</td>
+        <td class="fb-comments-comment-text">Não é exagero falar que esse vai ser um dos produtos mais famosos em breve.. os resultados sao de cair o queixo</td>
         </tr>
         <tr>
         <td class="fb-comments-comment-actions">
@@ -851,7 +737,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         <table class="fb-comments-comment" data-id="8">
         <tbody>
         <tr>
-        <td rowspan="3" class="fb-comments-comment-img"><img src="/img/c8.jpg">
+        <td rowspan="3" class="fb-comments-comment-img"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/c8.jpg">
         </td>
         <td>
         <div class="fb-comments-comment-name">
@@ -860,7 +746,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         </td>
         </tr>
         <tr>
-        <td class="fb-comments-comment-text">Escrevo esse meu comentário com a maior alegria no coração por saber que graças a Fernanda e também ao meu esforço de ter dado o primeiro passo consegui transformar totalmente meu casamento da água pro vinho.... Nossas relações melhoraram, nosso convívio melhorou... tudo agora parece novo! 🙏🙏</td>
+        <td class="fb-comments-comment-text">Aprovado! Peles das mao.. pescoço.. regiao da boca, melhorou muito 🙏🙏 gratidao</td>
         </tr>
         <tr>
         <td class="fb-comments-comment-actions">
@@ -879,7 +765,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         <table class="fb-comments-comment">
         <tbody>
         <tr>
-        <td rowspan="3" class="fb-comments-comment-img"><img src="/img/c9.jpg">
+        <td rowspan="3" class="fb-comments-comment-img"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/c9.jpg">
         </td>
         <td>
         <div class="fb-comments-comment-name">
@@ -888,7 +774,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         </td>
         </tr>
         <tr>
-        <td class="fb-comments-comment-text">Conheci o conteúdo da fernanda através da minha irmã que me recomendou e rapidamente achei incrível... uma pena não ter conhecido antes!!</td>
+        <td class="fb-comments-comment-text">Alguem sabe se esse é aquele que passou na TV?</td>
         </tr>
         <tr>
         <td class="fb-comments-comment-actions">
@@ -907,7 +793,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         <table class="fb-comments-comment">
         <tbody>
         <tr>
-        <td rowspan="3" class="fb-comments-comment-img"><img src="/img/c10.jpg">
+        <td rowspan="3" class="fb-comments-comment-img"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/c10.jpg">
         </td>
         <td>
         <div class="fb-comments-comment-name">
@@ -916,7 +802,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         </td>
         </tr>
         <tr>
-        <td class="fb-comments-comment-text">Por muito tempo lutei com alguns mal costumes e aceitei muitas coisas que finalmente hoje estou livre, mas não por que terminei meu relacionamento e sim porque a fernanda conseguiu me ensinar de uma vez por todas como eu, como mulher, poderia usar meu poder pessoal não só pra arrumar meu relacionamento da maneira que eu quisesse como também usar meu poder pessoal até para meus objetivos pessoais!! Agradeço imensamente por ter encontrado um conteúdo tão bom</td>
+        <td class="fb-comments-comment-text">Conheci por recomendação da dermatologista... por enquanto estou no 2 segundo mes e satisfeitissima com os resultados</td>
         </tr>
         <tr>
         <td class="fb-comments-comment-actions">
@@ -935,7 +821,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         <table class="fb-comments-comment">
         <tbody>
         <tr>
-        <td rowspan="3" class="fb-comments-comment-img"><img src="/img/c11.jpg"></td>
+        <td rowspan="3" class="fb-comments-comment-img"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/c11.jpg"></td>
         <td>
         <div class="fb-comments-comment-name">
         <name>Sophia Gomes Santos</name>
@@ -943,7 +829,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         </td>
         </tr>
         <tr>
-        <td class="fb-comments-comment-text">Deixo esse comentario como gratidão por criarem um conteudo tão interessante e surpreendente, tenho tido um convivio muito melhor e com muito sexxx agora kkkkkk</td>
+        <td class="fb-comments-comment-text">Isso é aqueles produtos tao bons que existem q vc nem acredita, dei um voto de confiança julgando totalmente que seria só propaganda e ja to indo pro 5º mes de uso.... a eficácia disso é surreal, a pele fica outra</td>
         </tr>
         <tr>
         <td class="fb-comments-comment-actions">
@@ -962,7 +848,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         <table class="fb-comments-comment" data-id="12">
         <tbody>
         <tr>
-        <td rowspan="3" class="fb-comments-comment-img"><img src="/img/c12.jpg">
+        <td rowspan="3" class="fb-comments-comment-img"><img src="https://portalnoticias.site/noticias-serum-gold-para-a-pele/img/c12.jpg">
         </td>
         <td>
         <div class="fb-comments-comment-name">
@@ -971,7 +857,7 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         </td>
         </tr>
         <tr>
-        <td class="fb-comments-comment-text">Para mim definitivamente foi uma transformação surreal, mesmo eu sendo um pouco timida e acanhada tenho vivido coisas que eu jamais sonhei</td>
+        <td class="fb-comments-comment-text">Para mim definitivamente foi uma uma transformacao inexplicabel.. quem me viu 1 mes atras e ve agora acha que fiz ate cirugria.. botox.. essas coisas assim</td>
         </tr>
         <tr>
         <td class="fb-comments-comment-actions">
@@ -989,7 +875,6 @@ Essa é sua chance de recuperar sua aparência jovem e se tornar ainda mais boni
         </div>
         </div>
 </div>
--->
 
 
 
@@ -1017,8 +902,7 @@ CNPJ: 32.282.516/0001-62</div>
 
 <div style="font-size:11px; color:#808080;">Isenção de responsabilidade de saúde: Este site NÃO se destina a fornecer aconselhamento médico ou substituir o aconselhamento médico e o tratamento do seu médico pessoal. Os visitantes são aconselhados a consultar seus próprios médicos ou outro profissional de saúde qualificado em relação ao tratamento de problemas médicos. O autor não deve ser responsabilizado ou responsável por qualquer mal-entendido ou uso indevido das informações contidas neste site ou por qualquer perda, dano ou prejuízo causado, ou alegadamente causado, direta ou indiretamente por qualquer tratamento, ação ou aplicação de qualquer alimento ou fonte de alimento discutido neste site. Todas as marcas registradas contidas neste documento são propriedade de seus respectivos proprietários. Fazemos o nosso melhor para manter as informações nesta página atualizadas, mas as regras e regulamentos mudam com frequência: como tal, não podemos ser responsabilizados por imprecisões.
 <br><br>
-Entenda quais são os riscos de não calibrar os pneus regularmente:
-https://www.portalautoshopping.com.br/blog/entenda-quais-sao-os-riscos-de-nao-calibrar-os-pneus-regularmente/
+
 </div>
 </div>
 </div>
@@ -1071,4 +955,146 @@ https://www.portalautoshopping.com.br/blog/entenda-quais-sao-os-riscos-de-nao-ca
       $(".fb-comments-loadmore").css("display", "none");
   }
 
+
+  	//TABOOLA VIEW CONTENT
+    //Verifica se sessão está visivel na tela
+	var executeWhenReachedPagePercentage = function(percentage, callback) {
+  if (typeof percentage !== 'number') {
+    console.error(
+      'First parameter must be a number, got',
+      typeof percentage,
+      'instead',
+    );
+  }
+
+  if (typeof callback !== 'function') {
+    console.error(
+      'Second parameter must be a function, got',
+      typeof callback,
+      'instead',
+    );
+  }
+
+  function getDocumentLength() {
+    var D = document;
+    return Math.max(
+        D.body.scrollHeight, D.documentElement.scrollHeight,
+        D.body.offsetHeight, D.documentElement.offsetHeight,
+        D.body.clientHeight, D.documentElement.clientHeight
+    )
+  }
+
+  function getWindowLength() {
+    return window.innerHeight || 
+      (document.documentElement || document.body).clientHeight;
+  }
+
+  function getScrollableLength() {
+    if (getDocumentLength() > getWindowLength()) {
+      return getDocumentLength() - getWindowLength();
+    } else {
+      return 0;
+    }
+  }
+
+  var scrollableLength = getScrollableLength();
+
+  window.addEventListener("resize", function(){
+    scrollableLength = getScrollableLength();
+  }, false)
+
+  function getCurrentScrolledLengthPosition() {
+   return window.pageYOffset || 
+     (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  }
+
+  function getPercentageScrolled() {
+    if (scrollableLength == 0) {
+      return 100;
+    } else {
+      return getCurrentScrolledLengthPosition() / scrollableLength * 100;
+    }
+  }
+
+  var executeCallback = (function() {
+    var wasExecuted = false;
+    return function() {
+      if (!wasExecuted && getPercentageScrolled() > percentage) {
+        wasExecuted = true;
+        callback();
+      }
+    };
+  })();
+
+  if (getDocumentLength() == 0 ||
+    (getWindowLength()/getDocumentLength() * 100 >= percentage)) {
+    callback();
+  } else {
+    window.addEventListener('scroll', executeCallback, false);
+  }
+};
+
+executeWhenReachedPagePercentage(10, function() {
+	window._tfa.push({notify: 'event', name: 'view_content', id: taboola_pixel});
+}); 
+
+
+</script>
+
+<script>
+  //SLIDESHOW
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+
+
+  //SLIDESHOW 2
+  let slideIndex2 = 0;
+  showSlides2();
+  
+  function showSlides2() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides2");
+    let dots = document.getElementsByClassName("dot2");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex2++;
+    if (slideIndex2 > slides.length) {slideIndex2 = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex2-1].style.display = "block";  
+    dots[slideIndex2-1].className += " active";
+    setTimeout(showSlides2, 2000); // Change image every 2 seconds
+  }
+  </script>
+
+<script>
+  var back_redirect_back_link = "https://serum-gold.shop/pv01";
+  history.pushState({}, "", location.href);
+  history.pushState({}, "", location.href);
+  window.addEventListener('popstate', function(event) {
+     if (event.state) {
+        setTimeout(function() {
+           location.href = back_redirect_back_link;
+        }, 1);
+     }
+  }, false);
 </script>
