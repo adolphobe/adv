@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Novidade - Veja agora essa noticia!</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="script/pixel.js"></script>
+
+	<script>
+  //LINK DESTINO
+  var link_destino = 'https://serum-gold.shop/pv01';
+
+  //TABOOLA PAGE VIEW
+  window._tfa.push({notify: 'event', name: 'page_view', id: taboola_pixel});
+
+  //TABOOLA VIEW CONTENT
+  _tfa.push({notify: 'event', name: 'view_content', id: taboola_pixel});
+
+  $(document).on('click', '.GO-PV', function () {
+    location.href = link_destino;
+});
+</script>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "en2s850k9j");
+</script>
+
+
+  </head>
+ 
+ <style>
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-bold-normal.woff2)
+      format('woff2'),
+    url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-bold-normal.woff2)
+      format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-bold-italic.woff2)
+      format('woff2'),
+    url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-bold-italic.woff)
+      format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-regular-italic.woff2)
+      format('woff2'),
+    url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-regular-italic.woff)
+      format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-light-normal.woff2)
+      format('woff2'),
+    url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-light-normal.woff)
+      format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-light-italic.woff2)
+      format('woff2'),
+    url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-light-italic.woff)
+      format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-regular-normal.woff2)
+      format('woff2'),
+    url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-regular-normal.woff)
+      format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 600;
+  src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-semibold-normal.woff2)
+      format('woff2'),
+    url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-semibold-normal.woff)
+      format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-semibold-italic.woff2)
+      format('woff2'),
+    url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-semibold-italic.woff)
+      format('woff');
+  font-display: swap;
+}
+
+:root {
+  --topo: 56px;   
+}
+
+	body{font-family:"glbOpenSans", "Open Sans"; margin:0px; padding:0px; color:#111; background:white;} 
+	
+	.topo{background:#C4170C; height:var(--topo); text-align:center; color:white;} 
+	.topo .container {
+	vertical-align: middle;
+	display: flex;                  
+	flex-direction: row;           
+	flex-wrap: nowrap;              
+	justify-content: space-between; 
+	width:100%;
+	margin:auto;
+	line-height: var(--topo);
+	}
+	.adv{background:#b11212; height:22px; text-align:center; color:#b3b3b3; font-size:11px; line-height:22px;}
+	.conteudo_pagina{padding:25px; letter-spacing:-0.04em;}
+	
+
+	.primeira_foto{width:100%;}
+	.foto_descricao{font-size:.75rem; line-height:1rem; color:#666; padding-bottom:28px; margin-top:8px; letter-spacing: 0px;}
+	
+	a{color:#c4170c; font-weight:700;}
+	a:visited{color:#c4170c; font-weight:700;}
+	a:hover{color:#d72317; font-weight:700;}
+	
+	.footer{background-color:#343434; padding:45px 25px 70px 25px; color:#Fbfbfb; margin-top:35px; text-align:left;}
+	.footer a{color:white; text-decoration:none; font-weight:300; line-height:90%;}
+	
+	
+	<!-- COMENTARIOS FB -->
+	.box_comentarios {
+    border: 1px solid #e9ebee;
+    border-radius: 3px;
+    padding: 0 15px;
+    padding-bottom: 15px;
+    margin: auto;
+    position: relative;
+    color: #4267b2;
+    margin-top: 30px;
+	}
+	.box_comentarios .total {
+		padding: 15px 0;
+		border-bottom: 1px solid #e9ebee;
+		color: #000;
+		font-weight: 700;
+		font-size: 0.9em;
+		font-family: arial, sans-serif;
+	}
+	.box_comentarios table {
+		border-collapse: collapse;
+		box-sizing: border-box;
+	}
+	.box_comentarios td {
+		border: none;
+		margin: 0;
+	}
+	.box_comentarios #more {
+		display: none;
+	}
+	
+	.fb-comments-comment {
+    border: none;
+    padding: 0;
+    margin: 10px 0;
+    width: 100%;
+    font-family: arial, sans-serif;
+	}
+	.fb-comments-comment-img {
+		vertical-align: top;
+		width: 48px;
+		padding-right: 5px;
+		border-style: none;
+	}
+	.fb-comments-comment img {
+		border-radius: 30px;
+		width: 48px;
+	}
+	.fb-comments-comment-name {
+		font-size: 0.85em;
+		font-weight: 700;
+		cursor: pointer;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.fb-comments-comment-text {
+		font-size: 0.9em;
+		color: #000;
+		border-radius: 21px;
+		background-color: #eaebef;
+		padding: 10px 20px;
+		line-height: 21px;
+	}
+	.fb-comments-comment-actions like,
+	.fb-comments-comment-actions reply {
+		font-size: 0.75em;
+		color: #4267b2;
+		text-decoration: none;
+		cursor: pointer;
+		cursor: hand;
+	}
+	.fb-comments-comment-actions date {
+		font-size: 0.75em;
+		color: #90949c;
+		text-decoration: none;
+		cursor: pointer;
+		cursor: hand;
+	}
+	.fb-comments-comment-actions likes {
+		font-size: 13px;
+		background: url(../img/like.webp);
+		background-repeat: no-repeat;
+		background-size: contain;
+		margin-top: -10px;
+		float: right;
+		background-color: #fff;
+		border: solid #eaebef;
+		border-radius: 19px;
+		padding: 6px 6px 5px 28px;
+	}
+	.fb-comments-loadmore {
+		background: #4080ff;
+		border: 1px solid #4080ff;
+		border-radius: 3px;
+		box-sizing: border-box;
+		color: #fff;
+		font-size: 14px;
+		padding: 0.875em;
+		text-shadow: none;
+		width: 100%;
+		font-weight: 700;
+		cursor: hand;
+		cursor: pointer;
+	}
+	
+	
+	
+	
+	@media (max-width: 960px){
+	.resize{width:100%;}
+	.resize_head{width:100%;}
+	.resize_content{width:100%; font-size:20px; letter-spacing:-0.025em; overflow-wrap:break-word;}
+	
+	h1{font-size:32px; letter-spacing: -0.04em; font-weigth:700; line-height:110%;}
+	.h1_tipo2{font-size:27px;}
+	
+	h2{font-size: 16px; line-height:150%; font-weight:400; color:#555;}
+	.por{font-size:14px; font-weight:300; color:#555; font-weight:700; line-height:129%; letter-spacing: -0.015em; padding-top:5px;}
+	.data{letter-spacing:-0.02em; font-weight:400; font-size:15px; margin-top:4px; color:#555;}
+	
+	.quote{font-size:24px; border-left: 4px solid #C4170C; padding-left:16px; font-weight:600; line-height:150%; letter-spacing: -0.035em; margin-top:29px; margin-bottom:34px; color:#333;}
+	.content_divider{margin-top:25px; height:20px; border-top:1px solid #ccc;}
+	
+	.box_comentarios{max-width: calc(100% - 80px);  border: 1px solid #e9ebee; border-radius: 3px; padding: 0 15px;padding-bottom: 15px; margin: auto;   position: relative; color: #4267b2; margin-top: 30px;}
+	.play_button{width:70px;}
+	.play{position:absolute; width:100%;  text-align: center; vertical-align:middle;display:table-cell; margin-top:50%; }
+	.call_to_action{font-size:19px;}
+	}
+	
+	@media (min-width: 961px){
+	.box_comentarios{border: 1px solid #e9ebee;  border-radius: 3px; padding: 0 15px;padding-bottom: 15px;margin: auto; position: relative;color: #4267b2;  margin-top: 30px;}
+	h1{font-size:56px; letter-spacing: -0.055em; line-height: 110%;}
+	.h1_tipo2{font-size:29px;}
+	h2{font-size: 20px; letter-spacing: -0.03em; line-height: 150%; color:#555; font-weight:400}
+	.por{font-size:16px; letter-spacing: -0.02em;}
+	.data{letter-spacing: -0.02em; font-size:16px}
+	
+	.resize_head{width:888px; margin:auto;}
+	.resize_content{width: 648px; margin:auto; font-size:20px; letter-spacing:-0.03em; line-height: 150%; overflow-wrap:break-word;}
+	
+	.quote{font-size:32px; border-left: 4px solid #C4170C; padding-left:30px; font-weight:600; line-height:150%; letter-spacing: -0.04em; margin-top:25px; margin-bottom:25px; color:#333;}
+	.content_divider{margin-top:45px; height:55px; border-top:1px solid #ccc;}
+	.box_comentarios{width:648px; margin:auto;}
+	.play_button{width:100px;}
+	.play{position:absolute; width:100%;  text-align: center; vertical-align:middle;display:table-cell; margin-top:358px; }
+	.call_to_action{font-size:22px;}
+	}
+	
+
+	.next{padding-bottom: 55%; margin-top:35px; background-image: url("img/next.jpg"); background-blend-mode: color; background-color: #0000005e; background-position: center center; background-size: 100%;background-repeat: no-repeat; display: flex; justify-content: center; align-items: center;}
+	.call_to_action{width:100%; padding:25px; background-color:#cb2d10; color:white; border:none; border-radius:6px; margin-top:15px;}
+	.call_to_action:hover{background:#e13a1c;}
+	
+	
+	.depoiment{font-size:17px; color:#111; padding:0px 10px; text-align:left; margin-bottom:30px;}
+	
+	
+</style>
+  <body>
+ <div class="adv">ADVERTORIAL</div>
+<div class="topo">
+<div class="resize">
+	<div class="container">
+	  <div style="width: 50px; height:var(--topo);"></div>
+	  <div style="width: 160px; height:var(--topo); font-size: 25px; font-weight:600; letter-spacing:-0.04em;">
+	  
+	  <!-- NOME PORTAL DE NOTICIA -->
+	  BLOG
+	  
+	  </div>
+	  <div style="width: 50px; height:var(--topo);"></div>
+	</div>
+</div>
+</div>
+
+<div class="conteudo_pagina">
+<div class="resize_head">
+
+	<!-- TITULO -->
+	<h1>Fórmula que ajuda na pele tem despertado curiosidade</h1>
+	
+	<!-- SUB TITULO -->
+	<h2>Mulheres do Brasil estão buscando cada vez mais ter uma pele de qualidade.</h2>
+	
+	<!-- MATERIA FEITA POR: -->
+	<div class="por"> Por Cristina Gomes e Felipe Moreira, BLOG  </div>
+	<!-- DATA -->
+
+	
+	
+<div class="content_divider"></div>
+</div>
+
+<div class="resize_content" style="font-size:19px;">
+
+	<!-- PRIMEIRA FOTO -->
+	<img src="https://blog.granado.com.br/wp-content/uploads/2021/02/post_thumbnail-b95087be9996efeb80eb1672748454b2-780x450.jpeg" class="primeira_foto">
+	
+	<!-- DESCRIÇÃO PRIMEIRA FOTO -->
+	<div class="foto_descricao">Matéria no programa da Fatima Bernardes - Foto: Portal BLOG</div>
+	
+	<!-- INICIO DO TEXTO -->
+	Em programa da própria rede globo foi apresentada uma matéria onde diz sobre os cuidados e a importancia de trazer de volta a beleza e vitalidade da pele, deixando diversas mulheres do Brasil esperançosas, 
+  <strong style="text-decoration: underline;color: #ac260e;">não importando se você tem 25 ou 72 anos.</strong><br><br>
+
+	E uma coisa na vida é certa: os reflexos da idade chegarão para todas nós. Por volta dos 40 anos, já se torna perceptível o surgimento de rugas, marcas de expressão e manchas na pele, elas acabam se tornando comuns e condenam totalmente a idade de uma mulher, diminuindo sua autoestima e lhe causando uma série de inseguranças.<br><br>
+
+	Acontece que esses problemas são muito mais comuns do que parecem, uma pesquisa da universidade de Oxford (Inglaterra), afirma que <strong style="text-decoration: underline;color: #ac260e;">ao menos 93,65% das mulheres entre 39 a 65 anos, são afetadas por algum problema de pele</strong>, causado pela falta de tempo para dedicar a saúde e a beleza da pele, isso aumenta a procura por tratamentos caros e perigosos.<br><br>
+
+	O fato é que para as mulheres a pele é algo extremamente importante, aumentando ainda mais as consequências desses problemas.<br><br>
+
+
+		
+
+	<img src="img/cel.webp" class="primeira_foto" style="padding-bottom:20px">
+	
+
+
+
+
+
+<a href="https://serum-gold.shop/pv01" class="GO-PV"><div style="text-align:center;"><img src="img/bt_experimente.png" class="primeira_foto" style="padding-bottom:20px; width:300px;"></div></a>
+
+
+
+	
+	
+	
+</div>
+</div>
+
+
+
+
+
+<!-- INICIO RODAPE -->
+<div class="footer">
+<div class="resize_content">
+
+<div style="font-size: 25px; font-weight:600; letter-spacing:-0.04em;">Portal BLOG</div>
+<div style="font-size:13px; font-weight:100">© Copyright 2000-2021 BLOG Comunicação e Participações
+CNPJ: 32.282.516/0001-62</div>
+
+
+<div style="margin-top:25px; margin-bottom:30px;">
+<span style="font-weight:700; ">Links úteis</span>
+<ul style="font-size:13px; line-height:25px;">
+  <li><a href="termos_de_uso.html">Termos de Uso</a></li>
+  <li><a href="privacidade.html">Políticas de Privacidade</a></li>
+   <li><a href="trocas.html">Trocas e Devoluções</a></li>
+  <li><a href="estudos.html">Estudos científicos</a></li>
+  <li><a href="mailto:contato@serumgold24k.com">Contato</a></li>
+</ul>
+</div>
+
+
+<div style="font-size:11px; color:#808080;">Isenção de responsabilidade de saúde: Este site NÃO se destina a fornecer aconselhamento médico ou substituir o aconselhamento médico e o tratamento do seu médico pessoal. Os visitantes são aconselhados a consultar seus próprios médicos ou outro profissional de saúde qualificado em relação ao tratamento de problemas médicos. O autor não deve ser responsabilizado ou responsável por qualquer mal-entendido ou uso indevido das informações contidas neste site ou por qualquer perda, dano ou prejuízo causado, ou alegadamente causado, direta ou indiretamente por qualquer tratamento, ação ou aplicação de qualquer alimento ou fonte de alimento discutido neste site. Todas as marcas registradas contidas neste documento são propriedade de seus respectivos proprietários. Fazemos o nosso melhor para manter as informações nesta página atualizadas, mas as regras e regulamentos mudam com frequência: como tal, não podemos ser responsabilizados por imprecisões.
+<br><br>
+Entenda quais são os riscos de não cuidar de forma eficaz de sua pele:
+https://cavalliericlinica.com.br/cinco-erros-comuns-que-podem-comprometer-saude-da-pele/#
+</div>
+</div>
+</div>
+
+  </body>
+</html>
