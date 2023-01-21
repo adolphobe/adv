@@ -1,0 +1,658 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Novidade - Veja agora essa noticia!</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="script/pixel.js"></script>
+
+	<script>
+  //LINK DESTINO
+  var link_destino = '';
+
+  //TABOOLA PAGE VIEW
+  window._tfa.push({notify: 'event', name: 'page_view', id: taboola_pixel});
+
+  //TABOOLA VIEW CONTENT NO FIM DA PAGINA
+
+
+  $(document).on('click', '.GO-PV', function () {
+		location.href = link_destino;
+	});
+</script>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "en2s850k9j");
+</script>
+
+  </head>
+ 
+ <style>
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-bold-normal.woff2)
+      format('woff2'),
+    url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-bold-normal.woff2)
+      format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-bold-italic.woff2)
+      format('woff2'),
+    url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-bold-italic.woff)
+      format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-regular-italic.woff2)
+      format('woff2'),
+    url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-regular-italic.woff)
+      format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-light-normal.woff2)
+      format('woff2'),
+    url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-light-normal.woff)
+      format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-light-italic.woff2)
+      format('woff2'),
+    url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-light-italic.woff)
+      format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-regular-normal.woff2)
+      format('woff2'),
+    url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-regular-normal.woff)
+      format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 600;
+  src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-semibold-normal.woff2)
+      format('woff2'),
+    url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-semibold-normal.woff)
+      format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-semibold-italic.woff2)
+      format('woff2'),
+    url(https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-semibold-italic.woff)
+      format('woff');
+  font-display: swap;
+}
+
+:root {
+  --topo: 56px;   
+}
+
+	body{font-family:"glbOpenSans", "Open Sans"; margin:0px; padding:0px; color:#111; background:white;} 
+	
+	.topo{background:#459cee; height:var(--topo); text-align:center; color:white;} 
+	.topo .container {
+	vertical-align: middle;
+	display: flex;                  
+	flex-direction: row;           
+	flex-wrap: nowrap;              
+	justify-content: space-between; 
+	width:100%;
+	margin:auto;
+	line-height: var(--topo);
+	}
+	.adv{background:#b11212; height:22px; text-align:center; color:#b3b3b3; font-size:11px; line-height:22px;}
+	.conteudo_pagina{padding:25px; letter-spacing:-0.04em;}
+	
+
+	.primeira_foto{width:100%;}
+	.foto_descricao{font-size:.75rem; line-height:1rem; color:#666; padding-bottom:28px; margin-top:8px; letter-spacing: 0px;}
+	
+	a{color:#c4170c; font-weight:700;}
+	a:visited{color:#c4170c; font-weight:700;}
+	a:hover{color:#d72317; font-weight:700;}
+	
+	.footer{background-color:#343434; padding:45px 25px 70px 25px; color:#Fbfbfb; margin-top:35px; text-align:left;}
+	.footer a{color:white; text-decoration:none; font-weight:300; line-height:90%;}
+	
+	
+	<!-- COMENTARIOS FB -->
+	.box_comentarios {
+    border: 1px solid #e9ebee;
+    border-radius: 3px;
+    padding: 0 15px;
+    padding-bottom: 15px;
+    margin: auto;
+    position: relative;
+    color: #4267b2;
+    margin-top: 30px;
+	}
+	.box_comentarios .total {
+		padding: 15px 0;
+		border-bottom: 1px solid #e9ebee;
+		color: #000;
+		font-weight: 700;
+		font-size: 0.9em;
+		font-family: arial, sans-serif;
+	}
+	.box_comentarios table {
+		border-collapse: collapse;
+		box-sizing: border-box;
+	}
+	.box_comentarios td {
+		border: none;
+		margin: 0;
+	}
+	.box_comentarios #more {
+		display: none;
+	}
+	
+	.fb-comments-comment {
+    border: none;
+    padding: 0;
+    margin: 10px 0;
+    width: 100%;
+    font-family: arial, sans-serif;
+	}
+	.fb-comments-comment-img {
+		vertical-align: top;
+		width: 48px;
+		padding-right: 5px;
+		border-style: none;
+	}
+	.fb-comments-comment img {
+		border-radius: 30px;
+		width: 48px;
+	}
+	.fb-comments-comment-name {
+		font-size: 0.85em;
+		font-weight: 700;
+		cursor: pointer;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.fb-comments-comment-text {
+		font-size: 0.9em;
+		color: #000;
+		border-radius: 21px;
+		background-color: #eaebef;
+		padding: 10px 20px;
+		line-height: 21px;
+	}
+	.fb-comments-comment-actions like,
+	.fb-comments-comment-actions reply {
+		font-size: 0.75em;
+		color: #4267b2;
+		text-decoration: none;
+		cursor: pointer;
+		cursor: hand;
+	}
+	.fb-comments-comment-actions date {
+		font-size: 0.75em;
+		color: #90949c;
+		text-decoration: none;
+		cursor: pointer;
+		cursor: hand;
+	}
+	.fb-comments-comment-actions likes {
+		font-size: 13px;
+		background: url(img/like.webp);
+		background-repeat: no-repeat;
+		background-size: contain;
+		margin-top: -10px;
+		float: right;
+		background-color: #fff;
+		border: solid #eaebef;
+		border-radius: 19px;
+		padding: 6px 6px 5px 28px;
+	}
+	.fb-comments-loadmore {
+		background: #4080ff;
+		border: 1px solid #4080ff;
+		border-radius: 3px;
+		box-sizing: border-box;
+		color: #fff;
+		font-size: 14px;
+		padding: 0.875em;
+		text-shadow: none;
+		width: 100%;
+		font-weight: 700;
+		cursor: hand;
+		cursor: pointer;
+	}
+	
+	
+	@keyframes zoom-in-zoom-out {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1.05, 1.05);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+	}
+	
+	@media (max-width: 960px){
+	.resize{width:100%;}
+	.resize_head{width:100%;}
+	.resize_content{width:100%; font-size:20px; letter-spacing:-0.025em; overflow-wrap:break-word;}
+	
+	h1{font-size:32px; letter-spacing: -0.04em; font-weight:700; line-height:110%;}
+	.h1_tipo2{font-size:27px;}
+	
+	h2{font-size: 16px; line-height:150%; font-weight:400; color:#555;}
+	.por{font-size:14px; font-weight:300; color:#555; font-weight:700; line-height:129%; letter-spacing: -0.015em; padding-top:5px;}
+	.data{letter-spacing:-0.02em; font-weight:400; font-size:15px; margin-top:4px; color:#555;}
+	
+	.quote{font-size:24px; border-left: 4px solid #CD0000; padding-left:16px; font-weight:600; line-height:150%; letter-spacing: -0.035em; margin-top:29px; margin-bottom:34px; color:#111;}
+	.content_divider{margin-top:25px; height:20px; border-top:1px solid #ccc;}
+	
+	.box_comentarios{max-width: calc(100% - 80px);  border: 1px solid #e9ebee; border-radius: 3px; padding: 0 15px;padding-bottom: 15px; margin: auto;   position: relative; color: #4267b2;}
+	.play_button{width:70px;}
+	.play{position:absolute; width:100%;  text-align: center; vertical-align:middle;display:table-cell; margin-top:50%; }
+	.call_to_action{font-size:19px;}
+	.action_mobile{width:90%; animation: zoom-in-zoom-out 1.2s ease infinite;}
+
+	.depoiment{font-size:17px; color:#111; padding:0px 10px; text-align:left; margin-bottom:45px; border-left: 4px solid #cd0000;   padding: 13px 13px 13px 30px;}
+	}
+	
+	@media (min-width: 961px){
+	.box_comentarios{border: 1px solid #e9ebee;  border-radius: 3px; padding: 0 15px;padding-bottom: 15px;margin: auto; position: relative;color: #4267b2;  margin-top: 30px;}
+	h1{font-size:56px; letter-spacing: -0.055em; line-height: 110%;}
+	.h1_tipo2{font-size:29px;}
+	h2{font-size: 20px; letter-spacing: -0.03em; line-height: 150%; color:#555; font-weight:400}
+	.por{font-size:16px; letter-spacing: -0.02em;}
+	.data{letter-spacing: -0.02em; font-size:16px}
+	
+	.resize_head{width:888px; margin:auto;}
+	.resize_content{width: 648px; margin:auto; font-size:20px; letter-spacing:-0.03em; line-height: 150%; overflow-wrap:break-word;}
+	
+	.quote{font-size:32px; border-left: 4px solid #C4170C; padding-left:30px; font-weight:600; line-height:150%; letter-spacing: -0.04em; margin-top:25px; margin-bottom:25px; color:#333;}
+	.content_divider{margin-top:45px; height:55px; border-top:1px solid #ccc;}
+	.box_comentarios{width:648px; margin:auto;}
+	.play_button{width:100px;}
+	.play{position:absolute; width:100%;  text-align: center; vertical-align:middle;display:table-cell; margin-top:358px; }
+	.call_to_action{font-size:22px;}
+	.action_mobile{animation: zoom-in-zoom-out 1.2s ease infinite;}
+
+	.depoiment{font-size:17px; color:#111; padding:0px 10px; text-align:left; margin-bottom:45px; border-left: 4px solid #cd0000;   padding: 13px 13px 13px 20px;}
+	}
+	
+
+	.next{padding-bottom: 55%; margin-top:35px; background-image: url(""); background-blend-mode: color; background-color: #0000005e; background-position: center center; background-size: 100%;background-repeat: no-repeat; display: flex; justify-content: center; align-items: center;}
+	.call_to_action{width:100%; padding:25px; background-color:#cb2d10; color:white; border:none; border-radius:6px; margin-top:15px;}
+	.call_to_action:hover{background:#e13a1c;}
+	
+	
+	
+	table{border:3px solid #e13a1c;  border-collapse:separate; overflow:hidden; margin:30px auto;}
+  td{border-bottom:1px solid #f5b5aa; border-right:1px solid #f5b5aa; padding:8px;}
+	
+</style>
+  <body>
+
+<div class="topo">
+<div class="resize">
+	<div class="container">
+	  
+	  <div style="width: 160px; height:var(--topo); font-size: 25px; font-weight:600; letter-spacing:-0.04em;">
+	  
+	  <!-- NOME PORTAL DE NOTICIA -->
+	 ADVERTORIAL
+	  
+	  </div>
+	  
+	</div>
+</div>
+</div>
+
+<div class="conteudo_pagina">
+<div class="resize_head">
+
+	<!--  -->
+	<h1>Óculos ajustáveis: uma opção para correção visual</h1>
+	
+	<!-- SUB TITULO -->
+	<h2>Empresa desenvolve óculos que pode ser utilizado de emergência nos casos onde seu óculos principal não está disponível.</h2>
+	
+	<!-- MATERIA FEITA POR: -->
+	<div class="por"> Por Felipe Moreira, Portal Noticias  </div>
+	<!-- DATA -->
+	<div class="data"> 
+
+	</div>
+	
+	
+<div class="content_divider"></div>
+</div>
+
+<div class="resize_content" style="font-size:19px;">
+<img src="https://melhorcomsaude.com.br/wp-content/uploads/2015/10/lente-500x334.jpg" style="width:100%">
+	
+	<!-- DESCRIÇÃO PRIMEIRA FOTO -->
+	<div class="foto_descricao">
+    <svg style="fill:#C4170C;" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"></path>
+    <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"></path>
+  </svg>Foto: melhorcomsaude.com.br</div>
+	
+	<!-- INICIO DO TEXTO -->
+  A saúde dos nossos olhos é vital para uma vida plena e ativa. Você deve sofrer ou conhece alguém próximo que sofre com problemas de visão, como <strong>miopia</strong>, <strong>astigmatismo</strong>, <strong>hipermetropia</strong>, <strong>presbiopia</strong>, <strong>cataratas</strong> 
+	ou <strong>glaucoma</strong>. 
+
+	<br><br>Chegou a hora de conhecer os óculos secundários FlexiLens desenvolvidos no Canadá para ser utilizados como óculos de emêrgencia.
+		
+	<br><br>AVISO, <strong>os óculos FlexiLens não dispensam consulta médica.
+ 
+	<a href="URL" class="GO-PV"><img src="https://cdn.greatsoftwares.com.br/arquivos/paginas_editor/3760-9730ee52388627b905b848a1bcbb4b0d.jpg" style="width:100%"></a><br><br>
+  <a href="URL" class="GO-PV"><img src="https://cdn.greatsoftwares.com.br/arquivos/paginas_editor/3760-fcdb9d6d1792dd64c583036f772ebf0b.jpg" style="width:100%"></a>
+  
+  
+
+<br>
+<br>
+<h1 class="h1_tipo2 marca_view_content" style="font-size:32px">Nossa reportagem garantiu uma oferta imperdível</h1>
+E agora, a melhor notícia de todas: após ter <strong>vendido mais de 9.000 unidades no lançamento</strong> e ter zerado o estoque em menos de 24 horas a empresa fabricante fez a reposição e liberou um valor promocional para os próximos 100 pedidos. <br><br>
+	
+	Você pode garantir o valor e fazer a compra do seus óculos FlexiLens no <a href="URL" class="GO-PV">site oficial clicando aqui</a>, ou no banner logo abaixo.
+	
+	<br><br>Os <a href="URL" class="GO-PV">óculos FlexiLens</a> ainda contam com 5 anos de garantia. <br> <br>
+	
+	<a href="URL" class="GO-PV"><img src="https://portalnoticias.site/noticias-oculos-flexilens/aplicar%20desconto.jpg" style="width:100%"></a>
+	<br><br>
+
+
+
+	
+</div>
+</div>
+
+
+
+
+
+
+
+
+<!-- INICIO RODAPE -->
+<div class="footer">
+<div class="resize_content">
+
+<div style="font-size: 25px; font-weight:600; letter-spacing:-0.04em;">Portal Noticias</div>
+<div style="font-size:13px; font-weight:100">© Copyright 2000-2021 Portal Noticias Comunicação e Participações
+CNPJ: 32.282.516/0001-62</div>
+
+
+<div style="margin-top:25px; margin-bottom:30px;">
+<span style="font-weight:700; ">Links úteis</span>
+<ul style="font-size:13px; line-height:25px;">
+  <li><a href="termos_de_uso.html">Termos de Uso</a></li>
+  <li><a href="privacidade.html">Políticas de Privacidade</a></li>
+   <li><a href="trocas.html">Trocas e Devoluções</a></li>
+  <li><a href="estudos.html">Estudos científicos</a></li>
+  <li><a href="mailto:sac@lojatudoexpress.com">Contato</a></li>
+</ul>
+</div>
+
+
+<div style="font-size:11px; color:#808080;">Isenção de responsabilidade de saúde: Este site NÃO se destina a fornecer aconselhamento médico ou substituir o aconselhamento médico e o tratamento do seu médico pessoal. Os visitantes são aconselhados a consultar seus próprios médicos ou outro profissional de saúde qualificado em relação ao tratamento de problemas médicos. O autor não deve ser responsabilizado ou responsável por qualquer mal-entendido ou uso indevido das informações contidas neste site ou por qualquer perda, dano ou prejuízo causado, ou alegadamente causado, direta ou indiretamente por qualquer tratamento, ação ou aplicação de qualquer alimento ou fonte de alimento discutido neste site. Todas as marcas registradas contidas neste documento são propriedade de seus respectivos proprietários. Fazemos o nosso melhor para manter as informações nesta página atualizadas, mas as regras e regulamentos mudam com frequência: como tal, não podemos ser responsabilizados por imprecisões.
+<br><br>
+
+</div>
+</div>
+</div>
+
+  </body>
+</html>
+
+<script>
+	var today = new Date();
+	var dd = String(today.getDate()).padStart(2, '0');
+	var mm = String(today.getMonth() + 1).padStart(2, '0'); 
+	var yyyy = today.getFullYear();
+	
+	var hora = today.getHours()-1 + "h" +  ("00" + today.getMinutes()).slice(-2); 
+	var today = dd + '/' + mm + '/' + yyyy;
+	
+	//atualiza hora e data do adv
+	$(document).ready(function() {
+		$(".data_atual").html(today);
+		$(".hora_atual").html(hora);
+	});
+
+
+	$('like').on('click', function () {
+      var target = $(this).closest('[data-id]');
+      var target = target.data('id');
+  
+      var qtd_likes = $('[data-id="'+target+'"]').find('likes').text();
+      var likes = parseInt(qtd_likes);
+  
+      if($('[data-id="'+target+'"]').find('likes').hasClass('curtido')){
+      //alterações se tiver curtido
+      $('[data-id="'+target+'"]').find('like').css({"font-weight": "normal", "color": "#4267b2"});
+      $('[data-id="'+target+'"]').find('likes').removeClass("curtido");
+      $('[data-id="'+target+'"]').find('likes').html(likes-1);
+      
+      
+      }else{
+  
+      //alterações se não tiver curtido
+      $('[data-id="'+target+'"]').find('like').css({"font-weight": "bold", "color": "#90949c"});
+      $('[data-id="'+target+'"]').find('likes').addClass("curtido");
+      $('[data-id="'+target+'"]').find('likes').html(likes+1);
+      }
+  });
+	
+	
+	 function loadMore(){
+      $("#more").css("display", "block");
+      $(".fb-comments-loadmore").css("display", "none");
+  }
+
+
+  	//TABOOLA VIEW CONTENT
+    //Verifica se sessão está visivel na tela
+	var executeWhenReachedPagePercentage = function(percentage, callback) {
+  if (typeof percentage !== 'number') {
+    console.error(
+      'First parameter must be a number, got',
+      typeof percentage,
+      'instead',
+    );
+  }
+
+  if (typeof callback !== 'function') {
+    console.error(
+      'Second parameter must be a function, got',
+      typeof callback,
+      'instead',
+    );
+  }
+
+  function getDocumentLength() {
+    var D = document;
+    return Math.max(
+        D.body.scrollHeight, D.documentElement.scrollHeight,
+        D.body.offsetHeight, D.documentElement.offsetHeight,
+        D.body.clientHeight, D.documentElement.clientHeight
+    )
+  }
+
+  function getWindowLength() {
+    return window.innerHeight || 
+      (document.documentElement || document.body).clientHeight;
+  }
+
+  function getScrollableLength() {
+    if (getDocumentLength() > getWindowLength()) {
+      return getDocumentLength() - getWindowLength();
+    } else {
+      return 0;
+    }
+  }
+
+  var scrollableLength = getScrollableLength();
+
+  window.addEventListener("resize", function(){
+    scrollableLength = getScrollableLength();
+  }, false)
+
+  function getCurrentScrolledLengthPosition() {
+   return window.pageYOffset || 
+     (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  }
+
+  function getPercentageScrolled() {
+    if (scrollableLength == 0) {
+      return 100;
+    } else {
+      return getCurrentScrolledLengthPosition() / scrollableLength * 100;
+    }
+  }
+
+  var executeCallback = (function() {
+    var wasExecuted = false;
+    return function() {
+      if (!wasExecuted && getPercentageScrolled() > percentage) {
+        wasExecuted = true;
+        callback();
+      }
+    };
+  })();
+
+  if (getDocumentLength() == 0 ||
+    (getWindowLength()/getDocumentLength() * 100 >= percentage)) {
+    callback();
+  } else {
+    window.addEventListener('scroll', executeCallback, false);
+  }
+};
+
+executeWhenReachedPagePercentage(10, function() {
+	window._tfa.push({notify: 'event', name: 'view_content', id: taboola_pixel});
+}); 
+
+
+</script>
+
+<script>
+  //SLIDESHOW
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+
+
+  //SLIDESHOW 2
+  let slideIndex2 = 0;
+  showSlides2();
+  
+  function showSlides2() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides2");
+    let dots = document.getElementsByClassName("dot2");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex2++;
+    if (slideIndex2 > slides.length) {slideIndex2 = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex2-1].style.display = "block";  
+    dots[slideIndex2-1].className += " active";
+    setTimeout(showSlides2, 2000); // Change image every 2 seconds
+  }
+  </script>
+
+<script>
+  var back_redirect_back_link = "https://meiasbioflex.shop/oferta1";
+  history.pushState({}, "", location.href);
+  history.pushState({}, "", location.href);
+  window.addEventListener('popstate', function(event) {
+     if (event.state) {
+        setTimeout(function() {
+           location.href = back_redirect_back_link;
+        }, 1);
+     }
+  }, false);
+</script>
