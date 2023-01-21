@@ -7,8 +7,7 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '543185694227266');
-fbq('init', '1116506585624643');
+fbq('init', '144446444444');
 
 
 //TABOOLA
